@@ -897,6 +897,30 @@ body{min-width:0}
 .feature-menu-panel button{width:100%;min-height:46px;text-align:left;justify-content:flex-start}
 .feature-menu-panel button.primary,.feature-menu-panel button.quiz-button{text-align:center}
 .feature-menu-panel .hidden{display:none !important}
+.focus-session-toggle{display:flex;align-items:center;justify-content:space-between!important;gap:14px;border-color:#b9ccec;background:#f5f8ff;color:#153a7a}
+.focus-session-toggle .switch-track{position:relative;flex:0 0 auto;width:46px;height:26px;border-radius:999px;background:#a9b5c8;box-shadow:inset 0 1px 3px rgba(15,23,42,.18);transition:background .2s ease}
+.focus-session-toggle .switch-track::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 2px 6px rgba(15,23,42,.28);transition:transform .2s ease}
+.focus-session-toggle.is-active{border-color:#8fb0ef;background:#edf4ff;color:#143f96}
+.focus-session-toggle.is-active .switch-track{background:#2457d6}
+.focus-session-toggle.is-active .switch-track::after{transform:translateX(20px)}
+.feature-guide{margin:18px 0;border:1px solid #bfd0ed;border-radius:18px;background:rgba(255,255,255,.92);box-shadow:0 10px 28px rgba(23,70,178,.08);overflow:hidden}
+.feature-guide summary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:58px;padding:14px 18px;color:#173c80;font-weight:850;cursor:pointer;list-style:none;user-select:none}
+.feature-guide summary::-webkit-details-marker{display:none}
+.feature-guide summary::after{content:"＋";display:grid;place-items:center;flex:0 0 auto;width:28px;height:28px;border-radius:50%;background:#edf3ff;color:#2457d6;font-size:19px;transition:transform .2s ease}
+.feature-guide[open] summary::after{content:"−";transform:rotate(180deg)}
+.feature-guide-content{display:grid;gap:10px;padding:0 14px 14px}
+.feature-guide-item{display:grid;grid-template-columns:minmax(105px,.25fr) 1fr;gap:14px;padding:14px;border:1px solid #d8e3f5;border-radius:14px;background:linear-gradient(145deg,#fff,#f4f8ff)}
+.feature-guide-item strong{display:block;color:#183f8d;font-size:15px}
+.feature-guide-item span{display:block;color:#52647f;font-size:14px;line-height:1.55}
+@media(max-width:640px){.feature-guide-content{grid-template-columns:1fr}.feature-guide-item{grid-template-columns:1fr;gap:5px}.feature-guide summary{padding:13px 15px}}
+.focus-notice-modal{position:fixed;z-index:1300;inset:0;display:grid;place-items:center;padding:18px;background:rgba(7,20,48,.58);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);animation:previewFade .18s ease}
+.focus-notice-card{position:relative;width:min(94vw,520px);padding:30px 26px 24px;border:2px solid rgba(255,255,255,.92);border-radius:25px;background:linear-gradient(145deg,#fff,#eef4ff 58%,#fff1f3);box-shadow:0 30px 85px rgba(3,14,38,.4);text-align:center;animation:previewRise .22s ease}
+.focus-notice-icon{display:grid;place-items:center;width:58px;height:58px;margin:0 auto 12px;border-radius:18px;background:#e8f0ff;color:#2457d6;font-size:29px}
+.focus-notice-card h2{margin:0 0 10px;color:#102f68;font-size:clamp(23px,4vw,30px)}
+.focus-notice-card p{margin:0 auto 18px;color:#50627e;font-size:15px;line-height:1.65}
+.focus-notice-actions{display:grid;gap:9px}.focus-notice-actions button{width:100%;min-height:46px}
+.focus-notice-actions .notice-every-time{border-color:#b8cbea;background:#f5f8ff;color:#19458f}
+@media(max-width:640px){.focus-notice-modal{padding:12px}.focus-notice-card{padding:28px 17px 19px;border-radius:21px}}
 @media(max-width:640px){.feature-menu{grid-column:1/-1;width:100%}.feature-menu summary{width:100%}.feature-menu-panel{left:0;right:auto;width:100%}}
 .topbar>button,.subpage-head>button{width:max-content !important;min-width:0 !important;min-height:40px !important;height:auto !important;padding:7px 11px !important;border-radius:10px !important;line-height:1.15}
 .feature-menu summary{width:max-content;min-height:40px;padding:7px 12px;border-radius:10px}
@@ -987,9 +1011,22 @@ body::before{background-image:linear-gradient(rgba(8,24,58,.08),rgba(8,24,58,.08
   <div class="dashboard-menu-row">
     <details class="feature-menu">
       <summary>☰ Menu Fitur</summary>
-      <div class="feature-menu-panel"><button class="fullscreen-toggle">⛶ Layar Penuh</button></div>
+      <div class="feature-menu-panel">
+        <button class="focus-session-toggle" id="focusSessionToggle" role="switch" aria-checked="true"><span>🎯 Sesi Fokus: ON</span><i class="switch-track" aria-hidden="true"></i></button>
+        <button class="fullscreen-toggle">⛶ Layar Penuh</button>
+      </div>
     </details>
   </div>
+
+  <details class="feature-guide">
+    <summary>📝 Log Update Website</summary>
+    <div class="feature-guide-content">
+      <div class="feature-guide-item"><strong>18 Sep 2026</strong><span>Data belajar direset untuk versi terbaru. Sesi Fokus dimulai dalam keadaan OFF dengan pilihan notifikasi: saya mengerti, jangan tampilkan lagi, atau tampilkan setiap kali diaktifkan.</span></div>
+      <div class="feature-guide-item"><strong>18 Sep 2026</strong><span>Menambahkan saklar Sesi Fokus ON/OFF. Mode ON membuka flashcard bertahap, sedangkan mode OFF membuka semua bagian.</span></div>
+      <div class="feature-guide-item"><strong>18 Sep 2026</strong><span>Menambahkan kalender belajar, pencatatan durasi penggunaan, jumlah kosakata harian, dan aturan reset progres setelah 48 jam tidak aktif.</span></div>
+      <div class="feature-guide-item"><strong>Update sebelumnya</strong><span>Flashcard interaktif dengan geser, mouse, keyboard, mode acak, contoh kalimat unik, kuis sulit, tabel responsif, grammar, serta progres tersimpan otomatis.</span></div>
+    </div>
+  </details>
 
   <div class="material-grid">
     <div class="material-card material-vocab" id="openVocabMenu">
@@ -1036,7 +1073,7 @@ body::before{background-image:linear-gradient(rgba(8,24,58,.08),rgba(8,24,58,.08
     <div class="calendar-summary"><span id="calendarMonthLabel"></span><span id="calendarTodayTime">Hari ini: 0 menit</span><span id="calendarTodayWords">0 kosakata</span></div>
     <div class="calendar-weekdays"><span>Min</span><span>Sen</span><span>Sel</span><span>Rab</span><span>Kam</span><span>Jum</span><span>Sab</span></div>
     <div class="calendar-grid" id="calendarGrid"></div>
-    <p class="calendar-lock-note">Tanggal yang sudah terlewat otomatis ditandai silang. Selesaikan seluruh kosakata pada satu bagian untuk membuka bagian berikutnya.</p>
+    <p class="calendar-lock-note" id="calendarLockNote">Tanggal yang sudah terlewat otomatis ditandai silang. Selesaikan seluruh kosakata pada satu bagian untuk membuka bagian berikutnya.</p>
   </section>
 </section>
 
@@ -1191,6 +1228,20 @@ body::before{background-image:linear-gradient(rgba(8,24,58,.08),rgba(8,24,58,.08
     <div class="vocab-preview-row"><span>Arti</span><strong id="vocabPreviewMeaning"></strong></div>
     <button class="primary writing-open" id="vocabWritingOpen">✍ Cara Tulis Kanji</button>
     <small>Ketuk area luar atau tekan Esc untuk menutup.</small>
+  </div>
+</div>
+
+<div class="focus-notice-modal hidden" id="focusNoticeModal" role="dialog" aria-modal="true" aria-labelledby="focusNoticeTitle">
+  <div class="focus-notice-card">
+    <button class="vocab-preview-close" id="focusNoticeClose" aria-label="Batalkan aktivasi">×</button>
+    <div class="focus-notice-icon">🎯</div>
+    <h2 id="focusNoticeTitle">Aktifkan Sesi Fokus?</h2>
+    <p>Bagian awal harus diselesaikan atau seluruh kosakatanya ditandai <b>Sudah Hafal</b> sebelum materi kosakata berikutnya dapat dibuka.</p>
+    <div class="focus-notice-actions">
+      <button class="primary" id="focusNoticeUnderstand">Saya mengerti, aktifkan</button>
+      <button id="focusNoticeNever">Jangan tampilkan notifikasi lagi</button>
+      <button class="notice-every-time" id="focusNoticeAlways">Tampilkan setiap mengaktifkan</button>
+    </div>
   </div>
 </div>
 
@@ -1539,6 +1590,23 @@ sets.forEach(group=>{
 });
 
 const $ = id => document.getElementById(id);
+const APP_DATA_VERSION_KEY="jlpt-app-data-version";
+const APP_DATA_VERSION="2026-09-18-focus-reset-v1";
+const FOCUS_NOTICE_KEY="jlpt-focus-session-notice-confirmed";
+if(localStorage.getItem(APP_DATA_VERSION_KEY)!==APP_DATA_VERSION){
+  [
+    "n4n3-2589-progress",
+    "jlpt-study-calendar-v1",
+    "jlpt-last-active-at",
+    "n4n3-table-columns",
+    "jlpt-flashcard-random-mode",
+    "jlpt-focus-session-mode",
+    "jlpt-focus-session-notice-confirmed",
+    "jlpt-n3-quiz-wrong",
+    "jlpt-n3-grammar-understood"
+  ].forEach(key=>localStorage.removeItem(key));
+  localStorage.setItem(APP_DATA_VERSION_KEY,APP_DATA_VERSION);
+}
 let activeDeckIndex = null; // null = keseluruhan
 let isCombinedMode = false;
 let isFromFirstMode = false;
@@ -1547,6 +1615,8 @@ let sourceDeck = allWords;
 let onlyUnmemorized = false;
 const FLASH_RANDOM_KEY="jlpt-flashcard-random-mode";
 let randomMode=localStorage.getItem(FLASH_RANDOM_KEY)==="true";
+const FOCUS_SESSION_KEY="jlpt-focus-session-mode";
+let focusSessionMode=localStorage.getItem(FOCUS_SESSION_KEY)==="true";
 let currentKey = "all";
 let index = 0;
 const STUDY_CALENDAR_KEY="jlpt-study-calendar-v1";
@@ -1636,6 +1706,7 @@ function saveKnown(s){
   if(newlyLearned.length)recordLearnedWords(newlyLearned);
 }
 function isDeckUnlocked(i){
+  if(!focusSessionMode)return true;
   if(i===null||i<=0)return true;
   const learned=knownSet();
   return sets[i-1].every(word=>learned.has(word.k));
@@ -1696,8 +1767,10 @@ function buildDashboard(){
     grid.appendChild(el);
   });
   const allDone=progressCount("all");
-  const availableWords=sets.slice(0,unlockedDeckCount()).flat().length;
-  $("allDeck").querySelector("span").textContent=`Tersedia ${availableWords}/${allWords.length} kosakata • Hafal ${allDone}/${allWords.length}`;
+  const availableWords=focusSessionMode?sets.slice(0,unlockedDeckCount()).flat().length:allWords.length;
+  $("allDeck").querySelector("span").textContent=focusSessionMode
+    ? `Tersedia ${availableWords}/${allWords.length} kosakata • Hafal ${allDone}/${allWords.length}`
+    : `Semua ${allWords.length} kosakata terbuka • Hafal ${allDone}/${allWords.length}`;
   const vocabPercent=Math.round((allDone/allWords.length)*100);
   $("dashboardVocabValue").textContent=`${allDone.toLocaleString("id-ID")} / ${allWords.length.toLocaleString("id-ID")} (${vocabPercent}%)`;
   $("dashboardVocabBar").style.width=`${vocabPercent}%`;
@@ -1713,6 +1786,7 @@ function buildDashboard(){
     : vocabPercent<=grammarPercent
       ? "Lanjutkan kosakata yang belum hafal."
       : "Seimbangkan latihan dengan grammar.";
+  updateFocusSessionUI();
   renderStudyCalendar();
 }
 
@@ -1723,7 +1797,7 @@ function selectDeck(i){
   isFromFirstMode=false;
   onlyUnmemorized=false;
   if(i===null){
-    sourceDeck=sets.slice(0,unlockedDeckCount()).flat(); currentKey="all";
+    sourceDeck=(focusSessionMode?sets.slice(0,unlockedDeckCount()):sets).flat(); currentKey="all";
   } else {
     sourceDeck=sets[i]; currentKey="set"+i;
   }
@@ -2109,7 +2183,54 @@ function toggleRandomMode(){
   updateRandomButton();
 }
 
+function updateFocusSessionUI(){
+  const button=$("focusSessionToggle");
+  if(!button)return;
+  button.classList.toggle("is-active",focusSessionMode);
+  button.setAttribute("aria-checked",String(focusSessionMode));
+  button.querySelector("span").textContent=focusSessionMode?"🎯 Sesi Fokus: ON":"🔓 Sesi Fokus: OFF";
+  const note=$("calendarLockNote");
+  if(note)note.textContent=focusSessionMode
+    ? "Tanggal yang sudah terlewat otomatis ditandai silang. Selesaikan seluruh kosakata pada satu bagian untuk membuka bagian berikutnya."
+    : "Tanggal yang sudah terlewat otomatis ditandai silang. Sesi Fokus nonaktif, jadi semua bagian flashcard dapat dibuka.";
+}
+function closeFocusNotice(){
+  $("focusNoticeModal").classList.add("hidden");
+  document.body.classList.remove("modal-open");
+  $("focusSessionToggle")?.focus({preventScroll:true});
+}
+function activateFocusSession(preference=""){
+  if(preference)localStorage.setItem(FOCUS_NOTICE_KEY,preference);
+  focusSessionMode=true;
+  localStorage.setItem(FOCUS_SESSION_KEY,"true");
+  closeFocusNotice();
+  buildDashboard();
+}
+function openFocusNotice(){
+  $("focusNoticeModal").classList.remove("hidden");
+  document.body.classList.add("modal-open");
+  $("focusNoticeUnderstand").focus({preventScroll:true});
+}
+function toggleFocusSession(){
+  const activating=!focusSessionMode;
+  if(activating){
+    if(localStorage.getItem(FOCUS_NOTICE_KEY)==="never")activateFocusSession();
+    else openFocusNotice();
+    return;
+  }
+  focusSessionMode=false;
+  localStorage.setItem(FOCUS_SESSION_KEY,"false");
+  buildDashboard();
+}
+
 $("allDeck").onclick=()=>openTable(null);
+$("focusSessionToggle").onclick=toggleFocusSession;
+$("focusNoticeClose").onclick=closeFocusNotice;
+$("focusNoticeUnderstand").onclick=()=>activateFocusSession();
+$("focusNoticeNever").onclick=()=>activateFocusSession("never");
+$("focusNoticeAlways").onclick=()=>activateFocusSession("always");
+$("focusNoticeModal").addEventListener("click",event=>{if(event.target===$("focusNoticeModal"))closeFocusNotice()});
+document.addEventListener("keydown",event=>{if(event.key==="Escape"&&!$("focusNoticeModal").classList.contains("hidden")){event.preventDefault();closeFocusNotice()}});
 $("tableBack").onclick=showPreviousPage;
 function moveTableGroup(direction){
   if(activeDeckIndex===null)return;
