@@ -980,9 +980,14 @@ body::before{background-image:linear-gradient(rgba(8,24,58,.08),rgba(8,24,58,.08
 #study .face{padding:22px}#study .scene{height:min(520px,66vh);min-height:400px}
 @media(max-width:640px){#study .scene{height:460px;min-height:430px}#study .face{padding:18px 13px}.vocab-example-front,.vocab-example-back{width:96%;margin-top:10px;padding:10px 11px}.vocab-example-front{max-height:145px}.vocab-example-back{max-height:175px}.vocab-example-jp{font-size:15px}.vocab-example-reading,.vocab-example-meaning{font-size:13px}}
 .vocab-preview-modal{position:fixed;z-index:1000;inset:0;display:grid;place-items:center;padding:20px;background:rgba(7,20,48,.48);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);animation:previewFade .18s ease}
-.vocab-preview-card{position:relative;width:min(92vw,520px);padding:34px 30px 27px;border:2px solid rgba(255,255,255,.9);border-radius:27px;background:linear-gradient(145deg,#fff,#f2f7ff 62%,#fff1f3);box-shadow:0 30px 80px rgba(3,14,38,.38);animation:previewRise .22s ease}
+.vocab-preview-card{position:relative;width:min(92vw,560px);max-height:90vh;overflow-y:auto;overscroll-behavior:contain;padding:34px 30px 27px;border:2px solid rgba(255,255,255,.9);border-radius:27px;background:linear-gradient(145deg,#fff,#f2f7ff 62%,#fff1f3);box-shadow:0 30px 80px rgba(3,14,38,.38);animation:previewRise .22s ease}
 .vocab-preview-close{position:absolute;top:13px;right:13px;display:grid;place-items:center;width:38px;height:38px;min-height:0 !important;padding:0;border:1px solid #d5dfed;border-radius:12px !important;background:#fff;color:#5d6f89;font-size:25px;line-height:1;cursor:pointer}
 .vocab-preview-label{display:block;color:#2457d6;font-size:12px;font-weight:900;letter-spacing:.13em;text-align:center;text-transform:uppercase}.vocab-preview-kanji{margin:16px 0 18px;color:#102f68;font-size:clamp(52px,10vw,88px);font-weight:950;line-height:1.1;text-align:center;overflow-wrap:anywhere}.vocab-preview-divider{height:3px;margin-bottom:18px;border-radius:99px;background:linear-gradient(90deg,#2457d6,#df3444)}.vocab-preview-row{display:grid;grid-template-columns:90px minmax(0,1fr);align-items:start;gap:12px;padding:12px 4px;border-bottom:1px solid #dde5f0}.vocab-preview-row span{color:#708099;font-size:13px;font-weight:800}.vocab-preview-row strong{color:#1b365f;font-size:clamp(18px,3vw,23px);line-height:1.4;overflow-wrap:anywhere}.vocab-preview-card small{display:block;margin-top:17px;color:#75849a;text-align:center}.modal-open{overflow:hidden !important}#vocabTable tbody tr{cursor:pointer}#vocabTable tbody tr:focus-visible{outline:3px solid #2457d6;outline-offset:-3px}
+.vocab-preview-example{margin-top:17px;padding:15px;border:1px solid #c9d8ef;border-radius:16px;background:linear-gradient(145deg,#f8fbff,#edf4ff)}
+.vocab-preview-example-title{margin-bottom:9px;color:#2457d6;font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.vocab-preview-example-jp{color:#153875;font-size:clamp(17px,3vw,21px);font-weight:850;line-height:1.55}
+.vocab-preview-example-reading{margin-top:7px;color:#5b6f8c;font-size:14px;font-weight:700;line-height:1.55}
+.vocab-preview-example-meaning{margin-top:9px;padding-top:9px;border-top:1px solid #d7e1f0;color:#a32637;font-size:14px;font-weight:750;line-height:1.55}
 @keyframes previewFade{from{opacity:0}to{opacity:1}}@keyframes previewRise{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:none}}
 @media(max-width:640px){.vocab-preview-modal{padding:14px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}.vocab-preview-card{padding:30px 19px 23px;border-radius:22px}.vocab-preview-row{grid-template-columns:76px minmax(0,1fr)}}
 .writing-open{width:100%;margin-top:18px;min-height:48px}.writing-modal{position:fixed;z-index:1100;inset:0;display:grid;place-items:center;padding:18px;background:rgba(7,20,48,.58);backdrop-filter:blur(11px);-webkit-backdrop-filter:blur(11px);animation:previewFade .18s ease}.writing-card{position:relative;width:min(94vw,650px);max-height:94vh;overflow:auto;padding:31px 28px 24px;border:2px solid rgba(255,255,255,.92);border-radius:27px;background:linear-gradient(145deg,#fff,#eef4ff 55%,#fff1f3);box-shadow:0 32px 90px rgba(3,14,38,.42);text-align:center;animation:previewRise .22s ease}.writing-card h2{margin:7px 0 8px;color:#102f68;font-size:clamp(24px,4vw,34px)}.writing-word{display:flex;align-items:baseline;justify-content:center;gap:12px;margin-bottom:8px}.writing-word strong{color:#b42335;font-size:clamp(23px,4vw,32px)}.writing-word span{color:#64748b;font-weight:750}.writing-counter{color:#2457d6;font-size:13px;font-weight:850}.writing-canvas{display:grid;place-items:center;width:min(290px,74vw);aspect-ratio:1;margin:12px auto;border:2px solid #b9cbea;border-radius:20px;background-color:#fff;background-image:linear-gradient(rgba(36,87,214,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(36,87,214,.12) 1px,transparent 1px),linear-gradient(45deg,transparent 49.6%,rgba(223,52,68,.12) 50%,transparent 50.4%),linear-gradient(-45deg,transparent 49.6%,rgba(223,52,68,.12) 50%,transparent 50.4%);background-size:50% 50%,50% 50%,100% 100%,100% 100%;overflow:hidden}.writing-canvas svg{display:block}.writing-status{min-height:22px;margin:8px 0;color:#5e708a;font-size:13px;font-weight:750}.writing-controls{display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:8px;margin-top:12px}.writing-controls button{min-height:47px;padding:9px 10px;font-size:13px}.writing-card>small{display:block;margin-top:13px;color:#718097}.writing-error{color:#b42335 !important}
@@ -1227,6 +1232,12 @@ body::before{background-image:linear-gradient(rgba(8,24,58,.08),rgba(8,24,58,.08
     <div class="vocab-preview-divider"></div>
     <div class="vocab-preview-row"><span>Hiragana</span><strong id="vocabPreviewHiragana"></strong></div>
     <div class="vocab-preview-row"><span>Arti</span><strong id="vocabPreviewMeaning"></strong></div>
+    <div class="vocab-preview-example">
+      <div class="vocab-preview-example-title">Contoh Kalimat</div>
+      <div class="vocab-preview-example-jp" id="vocabPreviewExample"></div>
+      <div class="vocab-preview-example-reading" id="vocabPreviewExampleReading"></div>
+      <div class="vocab-preview-example-meaning" id="vocabPreviewExampleMeaning"></div>
+    </div>
     <button class="primary writing-open" id="vocabWritingOpen">✍ Cara Tulis Kanji</button>
     <small>Ketuk area luar atau tekan Esc untuk menutup.</small>
   </div>
@@ -1928,6 +1939,9 @@ function openVocabPreview(word,trigger){
   $("vocabPreviewKanji").textContent=word.k;
   $("vocabPreviewHiragana").textContent=word.h;
   $("vocabPreviewMeaning").textContent=word.m;
+  $("vocabPreviewExample").textContent=word.ex||word.read||"";
+  $("vocabPreviewExampleReading").textContent=`Furigana: ${word.exr||word.readr||"-"}`;
+  $("vocabPreviewExampleMeaning").textContent=`Arti: ${word.exm||word.readm||"-"}`;
   $("vocabWritingOpen").classList.toggle("hidden",kanjiCharacters(word.k).length===0);
   $("vocabPreviewModal").classList.remove("hidden");
   document.body.classList.add("modal-open");
