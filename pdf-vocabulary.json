@@ -1,0 +1,3362 @@
+[
+  {
+    "source": 1,
+    "k": "男性",
+    "h": "だんせい",
+    "m": "laki-laki, pria"
+  },
+  {
+    "source": 2,
+    "k": "女性",
+    "h": "じょせい",
+    "m": "perempuan, wanita"
+  },
+  {
+    "source": 3,
+    "k": "高齢",
+    "h": "こうれい",
+    "m": "usia lanjut, lanjut usia"
+  },
+  {
+    "source": 4,
+    "k": "年上",
+    "h": "としうえ",
+    "m": "lebih tua, senior dalam usia"
+  },
+  {
+    "source": 5,
+    "k": "目上",
+    "h": "めうえ",
+    "m": "orang yang lebih tinggi kedudukannya / atasan"
+  },
+  {
+    "source": 6,
+    "k": "先輩",
+    "h": "せんぱい",
+    "m": "senior"
+  },
+  {
+    "source": 7,
+    "k": "後輩",
+    "h": "こうはい",
+    "m": "junior"
+  },
+  {
+    "source": 8,
+    "k": "上司",
+    "h": "じょうし",
+    "m": "atasan"
+  },
+  {
+    "source": 9,
+    "k": "相手",
+    "h": "あいて",
+    "m": "lawan, pasangan, pihak lain"
+  },
+  {
+    "source": 10,
+    "k": "知り合い",
+    "h": "しりあい",
+    "m": "kenalan"
+  },
+  {
+    "source": 11,
+    "k": "友人",
+    "h": "ゆうじん",
+    "m": "teman"
+  },
+  {
+    "source": 12,
+    "k": "仲",
+    "h": "なか",
+    "m": "hubungan, keakraban"
+  },
+  {
+    "source": 13,
+    "k": "生年月日",
+    "h": "せいねんがっぴ",
+    "m": "tanggal lahir"
+  },
+  {
+    "source": 14,
+    "k": "誕生",
+    "h": "たんじょう",
+    "m": "kelahiran"
+  },
+  {
+    "source": 15,
+    "k": "年",
+    "h": "とし",
+    "m": "tahun, usia"
+  },
+  {
+    "source": 16,
+    "k": "出身",
+    "h": "しゅっしん",
+    "m": "asal, daerah asal"
+  },
+  {
+    "source": 17,
+    "k": "故郷",
+    "h": "こきょう",
+    "m": "kampung halaman"
+  },
+  {
+    "source": 18,
+    "k": "成長",
+    "h": "せいちょう",
+    "m": "pertumbuhan, perkembangan"
+  },
+  {
+    "source": 19,
+    "k": "成人",
+    "h": "せいじん",
+    "m": "orang dewasa"
+  },
+  {
+    "source": 20,
+    "k": "合格",
+    "h": "ごうかく",
+    "m": "lulus"
+  },
+  {
+    "source": 21,
+    "k": "進学",
+    "h": "しんがく",
+    "m": "melanjutkan pendidikan ke jenjang lebih tinggi"
+  },
+  {
+    "source": 22,
+    "k": "退学",
+    "h": "たいがく",
+    "m": "keluar/berhenti dari sekolah atau universitas"
+  },
+  {
+    "source": 23,
+    "k": "就職",
+    "h": "しゅうしょく",
+    "m": "mendapat pekerjaan, mulai bekerja"
+  },
+  {
+    "source": 24,
+    "k": "退職",
+    "h": "たいしょく",
+    "m": "berhenti kerja, pensiun"
+  },
+  {
+    "source": 25,
+    "k": "失業",
+    "h": "しつぎょう",
+    "m": "kehilangan pekerjaan, pengangguran"
+  },
+  {
+    "source": 26,
+    "k": "残業",
+    "h": "ざんぎょう",
+    "m": "lembur"
+  },
+  {
+    "source": 27,
+    "k": "生活",
+    "h": "せいかつ",
+    "m": "kehidupan, kehidupan sehari-hari"
+  },
+  {
+    "source": 28,
+    "k": "通勤",
+    "h": "つうきん",
+    "m": "pergi-pulang kerja, perjalanan ke tempat kerja"
+  },
+  {
+    "source": 29,
+    "k": "学歴",
+    "h": "がくれき",
+    "m": "riwayat pendidikan"
+  },
+  {
+    "source": 30,
+    "k": "給料",
+    "h": "きゅうりょう",
+    "m": "gaji"
+  },
+  {
+    "source": 31,
+    "k": "面接",
+    "h": "めんせつ",
+    "m": "wawancara"
+  },
+  {
+    "source": 32,
+    "k": "休憩",
+    "h": "きゅうけい",
+    "m": "istirahat"
+  },
+  {
+    "source": 33,
+    "k": "観光",
+    "h": "かんこう",
+    "m": "wisata, tamasya"
+  },
+  {
+    "source": 34,
+    "k": "帰国",
+    "h": "きこく",
+    "m": "kembali ke negara asal"
+  },
+  {
+    "source": 35,
+    "k": "帰省",
+    "h": "きせい",
+    "m": "pulang kampung"
+  },
+  {
+    "source": 36,
+    "k": "帰宅",
+    "h": "きたく",
+    "m": "pulang ke rumah"
+  },
+  {
+    "source": 37,
+    "k": "参加",
+    "h": "さんか",
+    "m": "ikut serta, berpartisipasi"
+  },
+  {
+    "source": 38,
+    "k": "出席",
+    "h": "しゅっせき",
+    "m": "hadir, kehadiran"
+  },
+  {
+    "source": 39,
+    "k": "欠席",
+    "h": "けっせき",
+    "m": "tidak hadir, absen"
+  },
+  {
+    "source": 40,
+    "k": "遅刻",
+    "h": "ちこく",
+    "m": "terlambat"
+  },
+  {
+    "source": 41,
+    "k": "化粧",
+    "h": "けしょう",
+    "m": "berdandan, riasan/makeup"
+  },
+  {
+    "source": 42,
+    "k": "計算",
+    "h": "けいさん",
+    "m": "perhitungan, menghitung"
+  },
+  {
+    "source": 43,
+    "k": "計画",
+    "h": "けいかく",
+    "m": "rencana, perencanaan"
+  },
+  {
+    "source": 44,
+    "k": "成功",
+    "h": "せいこう",
+    "m": "keberhasilan, sukses"
+  },
+  {
+    "source": 45,
+    "k": "失敗",
+    "h": "しっぱい",
+    "m": "kegagalan, gagal"
+  },
+  {
+    "source": 46,
+    "k": "準備",
+    "h": "じゅんび",
+    "m": "persiapan"
+  },
+  {
+    "source": 47,
+    "k": "整理",
+    "h": "せいり",
+    "m": "merapikan, mengatur, membereskan"
+  },
+  {
+    "source": 48,
+    "k": "注文",
+    "h": "ちゅうもん",
+    "m": "pesanan, memesan"
+  },
+  {
+    "source": 49,
+    "k": "貯金",
+    "h": "ちょきん",
+    "m": "tabungan, menabung"
+  },
+  {
+    "source": 50,
+    "k": "徹夜",
+    "h": "てつや",
+    "m": "begadang semalaman"
+  },
+  {
+    "source": 51,
+    "k": "引っ越し",
+    "h": "ひっこし",
+    "m": "pindah rumah"
+  },
+  {
+    "source": 52,
+    "k": "身長",
+    "h": "しんちょう",
+    "m": "tinggi badan"
+  },
+  {
+    "source": 53,
+    "k": "体重",
+    "h": "たいじゅう",
+    "m": "berat badan"
+  },
+  {
+    "source": 54,
+    "k": "けが",
+    "h": "けが",
+    "m": "luka, cedera"
+  },
+  {
+    "source": 55,
+    "k": "会",
+    "h": "かい",
+    "m": "pertemuan, acara, perkumpulan"
+  },
+  {
+    "source": 56,
+    "k": "趣味",
+    "h": "しゅみ",
+    "m": "hobi, kegemaran"
+  },
+  {
+    "source": 57,
+    "k": "興味",
+    "h": "きょうみ",
+    "m": "minat, ketertarikan"
+  },
+  {
+    "source": 58,
+    "k": "思い出",
+    "h": "おもいで",
+    "m": "kenangan"
+  },
+  {
+    "source": 59,
+    "k": "冗談",
+    "h": "じょうだん",
+    "m": "lelucon, bercanda"
+  },
+  {
+    "source": 60,
+    "k": "目的",
+    "h": "もくてき",
+    "m": "tujuan"
+  },
+  {
+    "source": 61,
+    "k": "約束",
+    "h": "やくそく",
+    "m": "janji"
+  },
+  {
+    "source": 62,
+    "k": "おしゃべり",
+    "h": "おしゃべり",
+    "m": "mengobrol, suka berbicara"
+  },
+  {
+    "source": 63,
+    "k": "遠慮",
+    "h": "えんりょ",
+    "m": "sungkan, menahan diri, segan"
+  },
+  {
+    "source": 64,
+    "k": "我慢",
+    "h": "がまん",
+    "m": "sabar, menahan, bertahan"
+  },
+  {
+    "source": 65,
+    "k": "迷惑",
+    "h": "めいわく",
+    "m": "gangguan, merepotkan"
+  },
+  {
+    "source": 66,
+    "k": "希望",
+    "h": "きぼう",
+    "m": "harapan, keinginan"
+  },
+  {
+    "source": 67,
+    "k": "夢",
+    "h": "ゆめ",
+    "m": "mimpi, impian"
+  },
+  {
+    "source": 68,
+    "k": "賛成",
+    "h": "さんせい",
+    "m": "setuju, persetujuan"
+  },
+  {
+    "source": 69,
+    "k": "反対",
+    "h": "はんたい",
+    "m": "menentang, tidak setuju, kebalikan"
+  },
+  {
+    "source": 70,
+    "k": "想像",
+    "h": "そうぞう",
+    "m": "imajinasi, membayangkan"
+  },
+  {
+    "source": 71,
+    "k": "努力",
+    "h": "どりょく",
+    "m": "usaha, upaya"
+  },
+  {
+    "source": 72,
+    "k": "太陽",
+    "h": "たいよう",
+    "m": "matahari"
+  },
+  {
+    "source": 73,
+    "k": "地球",
+    "h": "ちきゅう",
+    "m": "bumi"
+  },
+  {
+    "source": 74,
+    "k": "温度",
+    "h": "おんど",
+    "m": "suhu, temperatur"
+  },
+  {
+    "source": 75,
+    "k": "湿度",
+    "h": "しつど",
+    "m": "kelembapan"
+  },
+  {
+    "source": 76,
+    "k": "湿気",
+    "h": "しっけ",
+    "m": "kelembapan, udara lembap"
+  },
+  {
+    "source": 77,
+    "k": "梅雨",
+    "h": "つゆ",
+    "m": "musim hujan"
+  },
+  {
+    "source": 78,
+    "k": "かび",
+    "h": "かび",
+    "m": "jamur"
+  },
+  {
+    "source": 79,
+    "k": "暖房",
+    "h": "だんぼう",
+    "m": "pemanas ruangan"
+  },
+  {
+    "source": 80,
+    "k": "皮",
+    "h": "かわ",
+    "m": "kulit"
+  },
+  {
+    "source": 81,
+    "k": "缶",
+    "h": "かん",
+    "m": "kaleng"
+  },
+  {
+    "source": 82,
+    "k": "画面",
+    "h": "がめん",
+    "m": "layar"
+  },
+  {
+    "source": 83,
+    "k": "番組",
+    "h": "ばんぐみ",
+    "m": "program/acara TV atau radio"
+  },
+  {
+    "source": 84,
+    "k": "記事",
+    "h": "きじ",
+    "m": "artikel, berita tertulis"
+  },
+  {
+    "source": 85,
+    "k": "近所",
+    "h": "きんじょ",
+    "m": "lingkungan sekitar, tetangga"
+  },
+  {
+    "source": 86,
+    "k": "警察",
+    "h": "けいさつ",
+    "m": "polisi, kepolisian"
+  },
+  {
+    "source": 87,
+    "k": "犯人",
+    "h": "はんにん",
+    "m": "pelaku kejahatan, penjahat"
+  },
+  {
+    "source": 88,
+    "k": "小銭",
+    "h": "こぜに",
+    "m": "uang receh, uang koin"
+  },
+  {
+    "source": 89,
+    "k": "ごちそう",
+    "h": "ごちそう",
+    "m": "hidangan/jamuan; mentraktir"
+  },
+  {
+    "source": 90,
+    "k": "作者",
+    "h": "さくしゃ",
+    "m": "penulis, pencipta karya"
+  },
+  {
+    "source": 91,
+    "k": "作品",
+    "h": "さくひん",
+    "m": "karya"
+  },
+  {
+    "source": 92,
+    "k": "制服",
+    "h": "せいふく",
+    "m": "seragam"
+  },
+  {
+    "source": 93,
+    "k": "洗剤",
+    "h": "せんざい",
+    "m": "deterjen, bahan pencuci"
+  },
+  {
+    "source": 94,
+    "k": "底",
+    "h": "そこ",
+    "m": "dasar, bagian bawah"
+  },
+  {
+    "source": 95,
+    "k": "地下",
+    "h": "ちか",
+    "m": "bawah tanah, basement"
+  },
+  {
+    "source": 96,
+    "k": "寺",
+    "h": "てら",
+    "m": "kuil Buddha"
+  },
+  {
+    "source": 97,
+    "k": "道路",
+    "h": "どうろ",
+    "m": "jalan raya, jalan"
+  },
+  {
+    "source": 98,
+    "k": "坂",
+    "h": "さか",
+    "m": "tanjakan, lereng"
+  },
+  {
+    "source": 99,
+    "k": "煙",
+    "h": "けむり",
+    "m": "asap"
+  },
+  {
+    "source": 100,
+    "k": "灰",
+    "h": "はい",
+    "m": "abu"
+  },
+  {
+    "source": 101,
+    "k": "判",
+    "h": "はん",
+    "m": "cap, stempel"
+  },
+  {
+    "source": 102,
+    "k": "名刺",
+    "h": "めいし",
+    "m": "kartu nama"
+  },
+  {
+    "source": 103,
+    "k": "免許",
+    "h": "めんきょ",
+    "m": "izin, lisensi"
+  },
+  {
+    "source": 104,
+    "k": "多く",
+    "h": "おおく",
+    "m": "banyak"
+  },
+  {
+    "source": 105,
+    "k": "前半",
+    "h": "ぜんはん",
+    "m": "paruh pertama, bagian awal"
+  },
+  {
+    "source": 106,
+    "k": "後半",
+    "h": "こうはん",
+    "m": "paruh kedua, bagian akhir"
+  },
+  {
+    "source": 107,
+    "k": "最高",
+    "h": "さいこう",
+    "m": "tertinggi, terbaik"
+  },
+  {
+    "source": 108,
+    "k": "最低",
+    "h": "さいてい",
+    "m": "terendah, terburuk"
+  },
+  {
+    "source": 109,
+    "k": "最初",
+    "h": "さいしょ",
+    "m": "pertama, awal"
+  },
+  {
+    "source": 110,
+    "k": "最後",
+    "h": "さいご",
+    "m": "terakhir, akhir"
+  },
+  {
+    "source": 111,
+    "k": "自動",
+    "h": "じどう",
+    "m": "otomatis"
+  },
+  {
+    "source": 112,
+    "k": "種類",
+    "h": "しゅるい",
+    "m": "jenis, macam"
+  },
+  {
+    "source": 113,
+    "k": "性格",
+    "h": "せいかく",
+    "m": "kepribadian, sifat"
+  },
+  {
+    "source": 114,
+    "k": "性質",
+    "h": "せいしつ",
+    "m": "sifat, karakteristik"
+  },
+  {
+    "source": 115,
+    "k": "順番",
+    "h": "じゅんばん",
+    "m": "urutan, giliran"
+  },
+  {
+    "source": 116,
+    "k": "番",
+    "h": "ばん",
+    "m": "nomor, giliran"
+  },
+  {
+    "source": 117,
+    "k": "方法",
+    "h": "ほうほう",
+    "m": "cara, metode"
+  },
+  {
+    "source": 118,
+    "k": "製品",
+    "h": "せいひん",
+    "m": "produk, barang hasil produksi"
+  },
+  {
+    "source": 119,
+    "k": "値上がり",
+    "h": "ねあがり",
+    "m": "kenaikan harga"
+  },
+  {
+    "source": 120,
+    "k": "生",
+    "h": "なま",
+    "m": "mentah, segar, belum dimasak"
+  },
+  {
+    "source": 121,
+    "k": "渇く",
+    "h": "かわく",
+    "m": "haus; menjadi haus"
+  },
+  {
+    "source": 122,
+    "k": "嗅ぐ",
+    "h": "かぐ",
+    "m": "mencium bau, mengendus"
+  },
+  {
+    "source": 123,
+    "k": "叩く",
+    "h": "たたく",
+    "m": "memukul, mengetuk, menepuk"
+  },
+  {
+    "source": 124,
+    "k": "殴る",
+    "h": "なぐる",
+    "m": "memukul, meninju"
+  },
+  {
+    "source": 125,
+    "k": "蹴る",
+    "h": "ける",
+    "m": "menendang"
+  },
+  {
+    "source": 126,
+    "k": "抱く",
+    "h": "だく",
+    "m": "memeluk, mendekap"
+  },
+  {
+    "source": 127,
+    "k": "倒れる",
+    "h": "たおれる",
+    "m": "jatuh, roboh, tumbang"
+  },
+  {
+    "source": 128,
+    "k": "倒す",
+    "h": "たおす",
+    "m": "menjatuhkan, merobohkan, mengalahkan"
+  },
+  {
+    "source": 129,
+    "k": "起きる",
+    "h": "おきる",
+    "m": "bangun; terjadi"
+  },
+  {
+    "source": 129,
+    "k": "起こる",
+    "h": "おこる",
+    "m": "bangun; terjadi"
+  },
+  {
+    "source": 130,
+    "k": "起こす",
+    "h": "おこす",
+    "m": "membangunkan; menyebabkan/menimbulkan"
+  },
+  {
+    "source": 131,
+    "k": "尋ねる",
+    "h": "たずねる",
+    "m": "bertanya, menanyakan"
+  },
+  {
+    "source": 132,
+    "k": "呼ぶ",
+    "h": "よぶ",
+    "m": "memanggil; mengundang; menyebut"
+  },
+  {
+    "source": 133,
+    "k": "叫ぶ",
+    "h": "さけぶ",
+    "m": "berteriak, berseru"
+  },
+  {
+    "source": 134,
+    "k": "黙る",
+    "h": "だまる",
+    "m": "diam, tidak berbicara"
+  },
+  {
+    "source": 135,
+    "k": "飼う",
+    "h": "かう",
+    "m": "memelihara hewan"
+  },
+  {
+    "source": 136,
+    "k": "数える",
+    "h": "かぞえる",
+    "m": "menghitung"
+  },
+  {
+    "source": 137,
+    "k": "乾く",
+    "h": "かわく",
+    "m": "menjadi kering"
+  },
+  {
+    "source": 138,
+    "k": "乾かす",
+    "h": "かわかす",
+    "m": "mengeringkan"
+  },
+  {
+    "source": 139,
+    "k": "畳む",
+    "h": "たたむ",
+    "m": "melipat"
+  },
+  {
+    "source": 140,
+    "k": "誘う",
+    "h": "さそう",
+    "m": "mengajak, mengundang"
+  },
+  {
+    "source": 141,
+    "k": "おごる",
+    "h": "おごる",
+    "m": "mentraktir"
+  },
+  {
+    "source": 142,
+    "k": "預かる",
+    "h": "あずかる",
+    "m": "menitipkan pada diri; menjaga barang/orang titipan"
+  },
+  {
+    "source": 143,
+    "k": "預ける",
+    "h": "あずける",
+    "m": "menitipkan, menyerahkan untuk dijaga"
+  },
+  {
+    "source": 144,
+    "k": "決まる",
+    "h": "きまる",
+    "m": "diputuskan, ditetapkan"
+  },
+  {
+    "source": 145,
+    "k": "決める",
+    "h": "きめる",
+    "m": "memutuskan, menentukan"
+  },
+  {
+    "source": 146,
+    "k": "写る",
+    "h": "うつる",
+    "m": "terfoto; tampak dalam foto"
+  },
+  {
+    "source": 147,
+    "k": "写す",
+    "h": "うつす",
+    "m": "memotret; menyalin"
+  },
+  {
+    "source": 148,
+    "k": "思い出す",
+    "h": "おもいだす",
+    "m": "mengingat kembali, teringat"
+  },
+  {
+    "source": 149,
+    "k": "教わる",
+    "h": "おそわる",
+    "m": "belajar/diajari oleh seseorang"
+  },
+  {
+    "source": 150,
+    "k": "申し込む",
+    "h": "もうしこむ",
+    "m": "mendaftar, mengajukan permohonan"
+  },
+  {
+    "source": 151,
+    "k": "断る",
+    "h": "ことわる",
+    "m": "menolak; meminta izin"
+  },
+  {
+    "source": 152,
+    "k": "見つかる",
+    "h": "みつかる",
+    "m": "ditemukan, ketahuan"
+  },
+  {
+    "source": 153,
+    "k": "見つける",
+    "h": "みつける",
+    "m": "menemukan"
+  },
+  {
+    "source": 154,
+    "k": "捕まる",
+    "h": "つかまる",
+    "m": "tertangkap; berpegangan"
+  },
+  {
+    "source": 155,
+    "k": "捕まえる",
+    "h": "つかまえる",
+    "m": "menangkap"
+  },
+  {
+    "source": 156,
+    "k": "乗る",
+    "h": "のる",
+    "m": "naik kendaraan"
+  },
+  {
+    "source": 157,
+    "k": "乗せる",
+    "h": "のせる",
+    "m": "menaikkan/membawa seseorang dengan kendaraan"
+  },
+  {
+    "source": 158,
+    "k": "降りる",
+    "h": "おりる",
+    "m": "turun; turun dari kendaraan"
+  },
+  {
+    "source": 158,
+    "k": "下りる",
+    "h": "おりる",
+    "m": "turun; turun dari kendaraan"
+  },
+  {
+    "source": 159,
+    "k": "降ろす",
+    "h": "おろす",
+    "m": "menurunkan; mengambil/menarik uang"
+  },
+  {
+    "source": 159,
+    "k": "下ろす",
+    "h": "おろす",
+    "m": "menurunkan; mengambil/menarik uang"
+  },
+  {
+    "source": 160,
+    "k": "直る",
+    "h": "なおる",
+    "m": "menjadi baik kembali, diperbaiki"
+  },
+  {
+    "source": 161,
+    "k": "直す",
+    "h": "なおす",
+    "m": "memperbaiki, membetulkan"
+  },
+  {
+    "source": 162,
+    "k": "治る",
+    "h": "なおる",
+    "m": "sembuh"
+  },
+  {
+    "source": 163,
+    "k": "治す",
+    "h": "なおす",
+    "m": "menyembuhkan, mengobati"
+  },
+  {
+    "source": 164,
+    "k": "亡くなる",
+    "h": "なくなる",
+    "m": "meninggal dunia"
+  },
+  {
+    "source": 165,
+    "k": "亡くす",
+    "h": "なくす",
+    "m": "kehilangan seseorang karena meninggal"
+  },
+  {
+    "source": 166,
+    "k": "生まれる",
+    "h": "うまれる",
+    "m": "lahir, tercipta"
+  },
+  {
+    "source": 167,
+    "k": "産む",
+    "h": "うむ",
+    "m": "melahirkan; menghasilkan, menciptakan"
+  },
+  {
+    "source": 167,
+    "k": "生む",
+    "h": "うむ",
+    "m": "melahirkan; menghasilkan, menciptakan"
+  },
+  {
+    "source": 168,
+    "k": "出会う",
+    "h": "であう",
+    "m": "bertemu secara kebetulan"
+  },
+  {
+    "source": 169,
+    "k": "訪ねる",
+    "h": "たずねる",
+    "m": "mengunjungi"
+  },
+  {
+    "source": 170,
+    "k": "付き合う",
+    "h": "つきあう",
+    "m": "bergaul; menemani; berpacaran"
+  },
+  {
+    "source": 171,
+    "k": "効く",
+    "h": "きく",
+    "m": "manjur, efektif"
+  },
+  {
+    "source": 172,
+    "k": "はやる",
+    "h": "はやる",
+    "m": "populer; sedang tren; penyakit menyebar"
+  },
+  {
+    "source": 173,
+    "k": "経つ",
+    "h": "たつ",
+    "m": "waktu berlalu"
+  },
+  {
+    "source": 174,
+    "k": "間に合う",
+    "h": "まにあう",
+    "m": "tepat waktu, keburu"
+  },
+  {
+    "source": 175,
+    "k": "間に合わせる",
+    "h": "まにあわせる",
+    "m": "menyelesaikan agar tepat waktu"
+  },
+  {
+    "source": 176,
+    "k": "通う",
+    "h": "かよう",
+    "m": "rutin pergi/pulang; bersekolah/berobat secara rutin"
+  },
+  {
+    "source": 177,
+    "k": "混む",
+    "h": "こむ",
+    "m": "padat, ramai"
+  },
+  {
+    "source": 178,
+    "k": "擦れ違う",
+    "h": "すれちがう",
+    "m": "berpapasan; saling melewati"
+  },
+  {
+    "source": 179,
+    "k": "掛かる",
+    "h": "かかる",
+    "m": "memerlukan waktu/biaya; terkena; tergantung"
+  },
+  {
+    "source": 180,
+    "k": "掛ける",
+    "h": "かける",
+    "m": "menggantung; mengenakan; menghabiskan waktu/biaya;"
+  },
+  {
+    "source": 181,
+    "k": "動く",
+    "h": "うごく",
+    "m": "bergerak; bekerja/berfungsi"
+  },
+  {
+    "source": 182,
+    "k": "動かす",
+    "h": "うごかす",
+    "m": "menggerakkan; menjalankan"
+  },
+  {
+    "source": 183,
+    "k": "公務員",
+    "h": "こうむいん",
+    "m": "pegawai negeri / PNS"
+  },
+  {
+    "source": 184,
+    "k": "会社員",
+    "h": "かいしゃいん",
+    "m": "pegawai perusahaan"
+  },
+  {
+    "source": 185,
+    "k": "教員",
+    "h": "きょういん",
+    "m": "guru, tenaga pengajar"
+  },
+  {
+    "source": 186,
+    "k": "店員",
+    "h": "てんいん",
+    "m": "pegawai toko"
+  },
+  {
+    "source": 187,
+    "k": "駅員",
+    "h": "えきいん",
+    "m": "petugas stasiun"
+  },
+  {
+    "source": 188,
+    "k": "銀行員",
+    "h": "ぎんこういん",
+    "m": "pegawai bank"
+  },
+  {
+    "source": 189,
+    "k": "郵便局員",
+    "h": "ゆうびんきょくいん",
+    "m": "pegawai kantor pos"
+  },
+  {
+    "source": 190,
+    "k": "客室乗務員",
+    "h": "きゃくしつじょうむいん",
+    "m": "pramugari / awak kabin"
+  },
+  {
+    "source": 191,
+    "k": "教師",
+    "h": "きょうし",
+    "m": "guru, pengajar"
+  },
+  {
+    "source": 192,
+    "k": "医師",
+    "h": "いし",
+    "m": "dokter"
+  },
+  {
+    "source": 193,
+    "k": "美容師",
+    "h": "びようし",
+    "m": "penata rambut / ahli kecantikan"
+  },
+  {
+    "source": 194,
+    "k": "調理師",
+    "h": "ちょうりし",
+    "m": "juru masak / koki"
+  },
+  {
+    "source": 195,
+    "k": "漁師",
+    "h": "りょうし",
+    "m": "nelayan"
+  },
+  {
+    "source": 196,
+    "k": "看護師",
+    "h": "かんごし",
+    "m": "perawat"
+  },
+  {
+    "source": 197,
+    "k": "弁護士",
+    "h": "べんごし",
+    "m": "pengacara"
+  },
+  {
+    "source": 198,
+    "k": "介護士",
+    "h": "かいごし",
+    "m": "caregiver / perawat lansia"
+  },
+  {
+    "source": 199,
+    "k": "保育士",
+    "h": "ほいくし",
+    "m": "guru/pengasuh penitipan anak"
+  },
+  {
+    "source": 200,
+    "k": "運転士",
+    "h": "うんてんし",
+    "m": "pengemudi profesional"
+  },
+  {
+    "source": 201,
+    "k": "政治家",
+    "h": "せいじか",
+    "m": "politikus"
+  },
+  {
+    "source": 202,
+    "k": "作家",
+    "h": "さっか",
+    "m": "penulis"
+  },
+  {
+    "source": 203,
+    "k": "画家",
+    "h": "がか",
+    "m": "pelukis"
+  },
+  {
+    "source": 204,
+    "k": "音楽家",
+    "h": "おんがくか",
+    "m": "musisi"
+  },
+  {
+    "source": 205,
+    "k": "作曲家",
+    "h": "さっきょくか",
+    "m": "komposer"
+  },
+  {
+    "source": 206,
+    "k": "建築家",
+    "h": "けんちくか",
+    "m": "arsitek"
+  },
+  {
+    "source": 207,
+    "k": "警察官",
+    "h": "けいさつかん",
+    "m": "polisi"
+  },
+  {
+    "source": 208,
+    "k": "医者",
+    "h": "いしゃ",
+    "m": "dokter"
+  },
+  {
+    "source": 209,
+    "k": "記者",
+    "h": "きしゃ",
+    "m": "wartawan, reporter"
+  },
+  {
+    "source": 210,
+    "k": "スポーツ選手",
+    "h": "スポーツせんしゅ",
+    "m": "atlet"
+  },
+  {
+    "source": 211,
+    "k": "歌手",
+    "h": "かしゅ",
+    "m": "penyanyi"
+  },
+  {
+    "source": 212,
+    "k": "運転手",
+    "h": "うんてんしゅ",
+    "m": "sopir, pengemudi"
+  },
+  {
+    "source": 213,
+    "k": "俳優",
+    "h": "はいゆう",
+    "m": "aktor; aktris"
+  },
+  {
+    "source": 213,
+    "k": "女優",
+    "h": "じょゆう",
+    "m": "aktor; aktris"
+  },
+  {
+    "source": 214,
+    "k": "車掌",
+    "h": "しゃしょう",
+    "m": "kondektur kereta/bus"
+  },
+  {
+    "source": 215,
+    "k": "職人",
+    "h": "しょくにん",
+    "m": "pengrajin, pekerja terampil"
+  },
+  {
+    "source": 216,
+    "k": "大工",
+    "h": "だいく",
+    "m": "tukang kayu"
+  },
+  {
+    "source": 217,
+    "k": "詩人",
+    "h": "しじん",
+    "m": "penyair"
+  },
+  {
+    "source": 218,
+    "k": "自営業",
+    "h": "じえいぎょう",
+    "m": "wiraswasta / usaha sendiri"
+  },
+  {
+    "source": 219,
+    "k": "離れる",
+    "h": "はなれる",
+    "m": "menjauh; berpisah; meninggalkan"
+  },
+  {
+    "source": 220,
+    "k": "離す",
+    "h": "はなす",
+    "m": "memisahkan; menjauhkan; melepaskan"
+  },
+  {
+    "source": 221,
+    "k": "ぶつかる",
+    "h": "ぶつかる",
+    "m": "bertabrakan; berbenturan; berbeda pendapat"
+  },
+  {
+    "source": 222,
+    "k": "ぶつける",
+    "h": "ぶつける",
+    "m": "menabrakkan; membenturkan"
+  },
+  {
+    "source": 223,
+    "k": "こぼれる",
+    "h": "こぼれる",
+    "m": "tumpah; tercecer; air mata menetes"
+  },
+  {
+    "source": 224,
+    "k": "こぼす",
+    "h": "こぼす",
+    "m": "menumpahkan; meneteskan"
+  },
+  {
+    "source": 225,
+    "k": "拭く",
+    "h": "ふく",
+    "m": "mengelap, menyeka"
+  },
+  {
+    "source": 226,
+    "k": "片付く",
+    "h": "かたづく",
+    "m": "menjadi rapi; terselesaikan"
+  },
+  {
+    "source": 227,
+    "k": "片付ける",
+    "h": "かたづける",
+    "m": "merapikan; membereskan; menyelesaikan"
+  },
+  {
+    "source": 228,
+    "k": "包む",
+    "h": "つつむ",
+    "m": "membungkus; menyelimuti"
+  },
+  {
+    "source": 229,
+    "k": "貼る",
+    "h": "はる",
+    "m": "menempelkan"
+  },
+  {
+    "source": 230,
+    "k": "無くなる",
+    "h": "なくなる",
+    "m": "hilang; habis; tidak ada lagi"
+  },
+  {
+    "source": 231,
+    "k": "無くす",
+    "h": "なくす",
+    "m": "menghilangkan; kehilangan"
+  },
+  {
+    "source": 232,
+    "k": "足りる",
+    "h": "たりる",
+    "m": "cukup, mencukupi"
+  },
+  {
+    "source": 233,
+    "k": "残る",
+    "h": "のこる",
+    "m": "tersisa; tetap tinggal"
+  },
+  {
+    "source": 234,
+    "k": "残す",
+    "h": "のこす",
+    "m": "menyisakan; meninggalkan"
+  },
+  {
+    "source": 235,
+    "k": "腐る",
+    "h": "くさる",
+    "m": "membusuk; menjadi rusak"
+  },
+  {
+    "source": 236,
+    "k": "剥ける",
+    "h": "むける",
+    "m": "terkelupas"
+  },
+  {
+    "source": 237,
+    "k": "剥く",
+    "h": "むく",
+    "m": "mengupas"
+  },
+  {
+    "source": 238,
+    "k": "滑る",
+    "h": "すべる",
+    "m": "tergelincir; meluncur"
+  },
+  {
+    "source": 239,
+    "k": "積もる",
+    "h": "つもる",
+    "m": "menumpuk; terakumulasi"
+  },
+  {
+    "source": 240,
+    "k": "積む",
+    "h": "つむ",
+    "m": "menumpuk; memuat; mengumpulkan pengalaman"
+  },
+  {
+    "source": 241,
+    "k": "空く",
+    "h": "あく",
+    "m": "kosong; tersedia; berlubang"
+  },
+  {
+    "source": 242,
+    "k": "空ける",
+    "h": "あける",
+    "m": "mengosongkan; menyediakan waktu/tempat"
+  },
+  {
+    "source": 243,
+    "k": "下がる",
+    "h": "さがる",
+    "m": "turun; menurun"
+  },
+  {
+    "source": 244,
+    "k": "下げる",
+    "h": "さげる",
+    "m": "menurunkan"
+  },
+  {
+    "source": 245,
+    "k": "冷える",
+    "h": "ひえる",
+    "m": "menjadi dingin; terasa dingin"
+  },
+  {
+    "source": 246,
+    "k": "冷やす",
+    "h": "ひやす",
+    "m": "mendinginkan"
+  },
+  {
+    "source": 247,
+    "k": "冷める",
+    "h": "さめる",
+    "m": "menjadi dingin; semangat mereda"
+  },
+  {
+    "source": 248,
+    "k": "冷ます",
+    "h": "さます",
+    "m": "mendinginkan; membiarkan menjadi dingin"
+  },
+  {
+    "source": 249,
+    "k": "燃える",
+    "h": "もえる",
+    "m": "terbakar; bersemangat"
+  },
+  {
+    "source": 250,
+    "k": "燃やす",
+    "h": "もやす",
+    "m": "membakar; membangkitkan semangat"
+  },
+  {
+    "source": 251,
+    "k": "沸く",
+    "h": "わく",
+    "m": "mendidih; suasana menjadi meriah"
+  },
+  {
+    "source": 252,
+    "k": "沸かす",
+    "h": "わかす",
+    "m": "mendidihkan; memanaskan air"
+  },
+  {
+    "source": 253,
+    "k": "鳴る",
+    "h": "なる",
+    "m": "berbunyi"
+  },
+  {
+    "source": 254,
+    "k": "鳴らす",
+    "h": "ならす",
+    "m": "membunyikan"
+  },
+  {
+    "source": 255,
+    "k": "役立つ",
+    "h": "やくだつ",
+    "m": "berguna; bermanfaat"
+  },
+  {
+    "source": 255,
+    "k": "役に立つ",
+    "h": "やくにたつ",
+    "m": "berguna; bermanfaat"
+  },
+  {
+    "source": 256,
+    "k": "役立てる",
+    "h": "やくだてる",
+    "m": "memanfaatkan; membuat berguna"
+  },
+  {
+    "source": 256,
+    "k": "役に立てる",
+    "h": "やくにたてる",
+    "m": "memanfaatkan; membuat berguna"
+  },
+  {
+    "source": 257,
+    "k": "飾り",
+    "h": "かざり",
+    "m": "hiasan; dekorasi"
+  },
+  {
+    "source": 258,
+    "k": "遊び",
+    "h": "あそび",
+    "m": "permainan; bermain; hiburan"
+  },
+  {
+    "source": 259,
+    "k": "集まり",
+    "h": "あつまり",
+    "m": "perkumpulan; pertemuan; kumpulan"
+  },
+  {
+    "source": 260,
+    "k": "教え",
+    "h": "おしえ",
+    "m": "ajaran; nasihat"
+  },
+  {
+    "source": 261,
+    "k": "踊り",
+    "h": "おどり",
+    "m": "tarian"
+  },
+  {
+    "source": 262,
+    "k": "思い",
+    "h": "おもい",
+    "m": "pikiran; perasaan"
+  },
+  {
+    "source": 263,
+    "k": "考え",
+    "h": "かんがえ",
+    "m": "pemikiran; ide; pendapat"
+  },
+  {
+    "source": 264,
+    "k": "片付け",
+    "h": "かたづけ",
+    "m": "pemberesan; merapikan"
+  },
+  {
+    "source": 265,
+    "k": "手伝い",
+    "h": "てつだい",
+    "m": "bantuan"
+  },
+  {
+    "source": 266,
+    "k": "働き",
+    "h": "はたらき",
+    "m": "fungsi; kerja; peranan"
+  },
+  {
+    "source": 267,
+    "k": "決まり",
+    "h": "きまり",
+    "m": "aturan; ketentuan; keputusan"
+  },
+  {
+    "source": 268,
+    "k": "騒ぎ",
+    "h": "さわぎ",
+    "m": "keributan; kegaduhan"
+  },
+  {
+    "source": 269,
+    "k": "知らせ",
+    "h": "しらせ",
+    "m": "kabar; pemberitahuan"
+  },
+  {
+    "source": 270,
+    "k": "頼み",
+    "h": "たのみ",
+    "m": "permintaan; permohonan"
+  },
+  {
+    "source": 271,
+    "k": "疲れ",
+    "h": "つかれ",
+    "m": "kelelahan"
+  },
+  {
+    "source": 272,
+    "k": "違い",
+    "h": "ちがい",
+    "m": "perbedaan"
+  },
+  {
+    "source": 273,
+    "k": "始め",
+    "h": "はじめ",
+    "m": "awal; permulaan"
+  },
+  {
+    "source": 274,
+    "k": "続き",
+    "h": "つづき",
+    "m": "lanjutan; sambungan"
+  },
+  {
+    "source": 275,
+    "k": "暮れ",
+    "h": "くれ",
+    "m": "akhir; penghujung tahun"
+  },
+  {
+    "source": 276,
+    "k": "行き",
+    "h": "いき",
+    "m": "pergi; perjalanan pergi"
+  },
+  {
+    "source": 277,
+    "k": "帰り",
+    "h": "かえり",
+    "m": "pulang; perjalanan pulang"
+  },
+  {
+    "source": 278,
+    "k": "急ぎ",
+    "h": "いそぎ",
+    "m": "urusan mendesak; tergesa-gesa"
+  },
+  {
+    "source": 279,
+    "k": "遅れ",
+    "h": "おくれ",
+    "m": "keterlambatan"
+  },
+  {
+    "source": 280,
+    "k": "貸し",
+    "h": "かし",
+    "m": "pinjaman yang diberikan; piutang"
+  },
+  {
+    "source": 281,
+    "k": "借り",
+    "h": "かり",
+    "m": "pinjaman; utang"
+  },
+  {
+    "source": 282,
+    "k": "勝ち",
+    "h": "かち",
+    "m": "kemenangan"
+  },
+  {
+    "source": 283,
+    "k": "負け",
+    "h": "まけ",
+    "m": "kekalahan"
+  },
+  {
+    "source": 284,
+    "k": "迎え",
+    "h": "むかえ",
+    "m": "jemputan; penjemputan"
+  },
+  {
+    "source": 285,
+    "k": "始まり",
+    "h": "はじまり",
+    "m": "awal; permulaan"
+  },
+  {
+    "source": 286,
+    "k": "終わり",
+    "h": "おわり",
+    "m": "akhir; selesai"
+  },
+  {
+    "source": 287,
+    "k": "戻り",
+    "h": "もどり",
+    "m": "kembali; kepulangan; perjalanan kembali"
+  },
+  {
+    "source": 288,
+    "k": "別れ",
+    "h": "わかれ",
+    "m": "perpisahan"
+  },
+  {
+    "source": 289,
+    "k": "喜び",
+    "h": "よろこび",
+    "m": "kegembiraan; sukacita"
+  },
+  {
+    "source": 290,
+    "k": "楽しみ",
+    "h": "たのしみ",
+    "m": "kesenangan; sesuatu yang dinantikan"
+  },
+  {
+    "source": 291,
+    "k": "笑い",
+    "h": "わらい",
+    "m": "tawa; tertawa"
+  },
+  {
+    "source": 292,
+    "k": "驚き",
+    "h": "おどろき",
+    "m": "keterkejutan; rasa terkejut"
+  },
+  {
+    "source": 293,
+    "k": "怒り",
+    "h": "いかり",
+    "m": "kemarahan"
+  },
+  {
+    "source": 294,
+    "k": "悲しみ",
+    "h": "かなしみ",
+    "m": "kesedihan"
+  },
+  {
+    "source": 295,
+    "k": "幸せ",
+    "h": "しあわせ",
+    "m": "bahagia"
+  },
+  {
+    "source": 296,
+    "k": "得意",
+    "h": "とくい",
+    "m": "mahir; pandai; kuat dalam"
+  },
+  {
+    "source": 297,
+    "k": "苦手",
+    "h": "にがて",
+    "m": "kurang pandai; tidak suka/kurang nyaman"
+  },
+  {
+    "source": 298,
+    "k": "熱心",
+    "h": "ねっしん",
+    "m": "tekun; antusias; sungguh-sungguh"
+  },
+  {
+    "source": 299,
+    "k": "夢中",
+    "h": "むちゅう",
+    "m": "asyik; tergila-gila; sangat terpikat"
+  },
+  {
+    "source": 300,
+    "k": "退屈",
+    "h": "たいくつ",
+    "m": "membosankan; merasa bosan"
+  },
+  {
+    "source": 301,
+    "k": "健康",
+    "h": "けんこう",
+    "m": "sehat"
+  },
+  {
+    "source": 302,
+    "k": "苦しい",
+    "h": "くるしい",
+    "m": "menderita; sakit; sulit"
+  },
+  {
+    "source": 303,
+    "k": "平気",
+    "h": "へいき",
+    "m": "tenang; tidak masalah; baik-baik saja"
+  },
+  {
+    "source": 304,
+    "k": "悔しい",
+    "h": "くやしい",
+    "m": "kesal; menyesal; frustrasi"
+  },
+  {
+    "source": 305,
+    "k": "羨ましい",
+    "h": "うらやましい",
+    "m": "iri; merasa ingin seperti orang lain"
+  },
+  {
+    "source": 306,
+    "k": "かわいい",
+    "h": "かわいい",
+    "m": "lucu; imut; menggemaskan"
+  },
+  {
+    "source": 307,
+    "k": "大人しい",
+    "h": "おとなしい",
+    "m": "pendiam; tenang; penurut"
+  },
+  {
+    "source": 308,
+    "k": "我慢強い",
+    "h": "がまんづよい",
+    "m": "sabar; tahan menghadapi kesulitan"
+  },
+  {
+    "source": 309,
+    "k": "正直",
+    "h": "しょうじき",
+    "m": "jujur"
+  },
+  {
+    "source": 310,
+    "k": "けち",
+    "h": "けち",
+    "m": "pelit; kikir"
+  },
+  {
+    "source": 311,
+    "k": "わがまま",
+    "h": "わがまま",
+    "m": "egois; manja; semaunya sendiri"
+  },
+  {
+    "source": 312,
+    "k": "積極的",
+    "h": "せっきょくてき",
+    "m": "aktif; positif; proaktif"
+  },
+  {
+    "source": 313,
+    "k": "消極的",
+    "h": "しょうきょくてき",
+    "m": "pasif; negatif; kurang aktif"
+  },
+  {
+    "source": 314,
+    "k": "満足",
+    "h": "まんぞく",
+    "m": "puas; memuaskan"
+  },
+  {
+    "source": 315,
+    "k": "不満",
+    "h": "ふまん",
+    "m": "tidak puas"
+  },
+  {
+    "source": 316,
+    "k": "不安",
+    "h": "ふあん",
+    "m": "cemas; khawatir; tidak tenang"
+  },
+  {
+    "source": 317,
+    "k": "大変",
+    "h": "たいへん",
+    "m": "berat; sulit; serius"
+  },
+  {
+    "source": 318,
+    "k": "無理",
+    "h": "むり",
+    "m": "mustahil; tidak masuk akal; terlalu berat"
+  },
+  {
+    "source": 319,
+    "k": "不注意",
+    "h": "ふちゅうい",
+    "m": "ceroboh; kurang hati-hati"
+  },
+  {
+    "source": 320,
+    "k": "楽",
+    "h": "らく",
+    "m": "mudah; nyaman; ringan"
+  },
+  {
+    "source": 321,
+    "k": "面倒",
+    "h": "めんどう",
+    "m": "merepotkan; menyusahkan"
+  },
+  {
+    "source": 322,
+    "k": "失礼",
+    "h": "しつれい",
+    "m": "tidak sopan; kurang ajar"
+  },
+  {
+    "source": 323,
+    "k": "当然",
+    "h": "とうぜん",
+    "m": "wajar; sudah semestinya"
+  },
+  {
+    "source": 324,
+    "k": "意外",
+    "h": "いがい",
+    "m": "tak terduga; di luar dugaan"
+  },
+  {
+    "source": 325,
+    "k": "結構",
+    "h": "けっこう",
+    "m": "cukup; bagus; memadai"
+  },
+  {
+    "source": 326,
+    "k": "派手",
+    "h": "はで",
+    "m": "mencolok; mewah"
+  },
+  {
+    "source": 327,
+    "k": "地味",
+    "h": "じみ",
+    "m": "sederhana; tidak mencolok"
+  },
+  {
+    "source": 328,
+    "k": "おしゃれ",
+    "h": "おしゃれ",
+    "m": "modis; bergaya"
+  },
+  {
+    "source": 329,
+    "k": "変",
+    "h": "へん",
+    "m": "aneh"
+  },
+  {
+    "source": 330,
+    "k": "不思議",
+    "h": "ふしぎ",
+    "m": "misterius; aneh; ajaib"
+  },
+  {
+    "source": 331,
+    "k": "まし",
+    "h": "まし",
+    "m": "lebih baik; lumayan"
+  },
+  {
+    "source": 332,
+    "k": "無駄",
+    "h": "むだ",
+    "m": "sia-sia; mubazir; tidak berguna"
+  },
+  {
+    "source": 333,
+    "k": "自由",
+    "h": "じゆう",
+    "m": "bebas"
+  },
+  {
+    "source": 334,
+    "k": "不自由",
+    "h": "ふじゆう",
+    "m": "tidak bebas; tidak leluasa; tidak nyaman"
+  },
+  {
+    "source": 335,
+    "k": "暖まる",
+    "h": "あたたまる",
+    "m": "menjadi hangat"
+  },
+  {
+    "source": 335,
+    "k": "温まる",
+    "h": "あたたまる",
+    "m": "menjadi hangat"
+  },
+  {
+    "source": 336,
+    "k": "暖める",
+    "h": "あたためる",
+    "m": "menghangatkan"
+  },
+  {
+    "source": 336,
+    "k": "温める",
+    "h": "あたためる",
+    "m": "menghangatkan"
+  },
+  {
+    "source": 337,
+    "k": "高まる",
+    "h": "たかまる",
+    "m": "meningkat; menjadi tinggi"
+  },
+  {
+    "source": 338,
+    "k": "高める",
+    "h": "たかめる",
+    "m": "meningkatkan; meninggikan"
+  },
+  {
+    "source": 339,
+    "k": "強まる",
+    "h": "つよまる",
+    "m": "menguat; menjadi lebih kuat"
+  },
+  {
+    "source": 340,
+    "k": "強める",
+    "h": "つよめる",
+    "m": "memperkuat"
+  },
+  {
+    "source": 341,
+    "k": "弱まる",
+    "h": "よわまる",
+    "m": "melemah; menjadi lebih lemah"
+  },
+  {
+    "source": 342,
+    "k": "弱める",
+    "h": "よわめる",
+    "m": "melemahkan"
+  },
+  {
+    "source": 343,
+    "k": "広まる",
+    "h": "ひろまる",
+    "m": "menyebar; meluas"
+  },
+  {
+    "source": 344,
+    "k": "広める",
+    "h": "ひろめる",
+    "m": "menyebarkan; memperluas"
+  },
+  {
+    "source": 345,
+    "k": "深まる",
+    "h": "ふかまる",
+    "m": "semakin dalam; mendalam"
+  },
+  {
+    "source": 346,
+    "k": "深める",
+    "h": "ふかめる",
+    "m": "memperdalam"
+  },
+  {
+    "source": 347,
+    "k": "世話",
+    "h": "せわ",
+    "m": "perawatan; bantuan; mengurus"
+  },
+  {
+    "source": 348,
+    "k": "家庭",
+    "h": "かてい",
+    "m": "rumah tangga; keluarga"
+  },
+  {
+    "source": 349,
+    "k": "協力",
+    "h": "きょうりょく",
+    "m": "kerja sama; bantuan"
+  },
+  {
+    "source": 350,
+    "k": "感謝",
+    "h": "かんしゃ",
+    "m": "rasa terima kasih; bersyukur"
+  },
+  {
+    "source": 351,
+    "k": "お礼",
+    "h": "おれい",
+    "m": "ucapan/tanda terima kasih"
+  },
+  {
+    "source": 352,
+    "k": "お詫び",
+    "h": "おわび",
+    "m": "permintaan maaf"
+  },
+  {
+    "source": 353,
+    "k": "お辞儀",
+    "h": "おじぎ",
+    "m": "membungkuk; salam membungkuk"
+  },
+  {
+    "source": 354,
+    "k": "握手",
+    "h": "あくしゅ",
+    "m": "berjabat tangan; jabat tangan"
+  },
+  {
+    "source": 355,
+    "k": "意地悪",
+    "h": "いじわる",
+    "m": "jahil; jahat; usil; bersikap tidak baik"
+  },
+  {
+    "source": 356,
+    "k": "いたずら",
+    "h": "いたずら",
+    "m": "kenakalan; keisengan; jahil"
+  },
+  {
+    "source": 357,
+    "k": "節約",
+    "h": "せつやく",
+    "m": "penghematan; berhemat"
+  },
+  {
+    "source": 358,
+    "k": "経営",
+    "h": "けいえい",
+    "m": "pengelolaan; manajemen; menjalankan usaha"
+  },
+  {
+    "source": 359,
+    "k": "反省",
+    "h": "はんせい",
+    "m": "introspeksi; refleksi; menyesali dan mengevaluasi diri"
+  },
+  {
+    "source": 360,
+    "k": "実行",
+    "h": "じっこう",
+    "m": "pelaksanaan; menjalankan; melaksanakan"
+  },
+  {
+    "source": 361,
+    "k": "進歩",
+    "h": "しんぽ",
+    "m": "kemajuan; perkembangan"
+  },
+  {
+    "source": 362,
+    "k": "変化",
+    "h": "へんか",
+    "m": "perubahan"
+  },
+  {
+    "source": 363,
+    "k": "発展",
+    "h": "はってん",
+    "m": "perkembangan; kemajuan"
+  },
+  {
+    "source": 364,
+    "k": "体力",
+    "h": "たいりょく",
+    "m": "kekuatan fisik; stamina"
+  },
+  {
+    "source": 365,
+    "k": "出場",
+    "h": "しゅつじょう",
+    "m": "ikut serta; tampil dalam pertandingan/acara"
+  },
+  {
+    "source": 366,
+    "k": "活躍",
+    "h": "かつやく",
+    "m": "berperan aktif; berprestasi"
+  },
+  {
+    "source": 367,
+    "k": "競争",
+    "h": "きょうそう",
+    "m": "persaingan; kompetisi"
+  },
+  {
+    "source": 368,
+    "k": "応援",
+    "h": "おうえん",
+    "m": "dukungan; menyemangati"
+  },
+  {
+    "source": 369,
+    "k": "拍手",
+    "h": "はくしゅ",
+    "m": "tepuk tangan"
+  },
+  {
+    "source": 370,
+    "k": "人気",
+    "h": "にんき",
+    "m": "popularitas; populer"
+  },
+  {
+    "source": 371,
+    "k": "噂",
+    "h": "うわさ",
+    "m": "rumor; kabar angin"
+  },
+  {
+    "source": 372,
+    "k": "情報",
+    "h": "じょうほう",
+    "m": "informasi"
+  },
+  {
+    "source": 373,
+    "k": "交換",
+    "h": "こうかん",
+    "m": "pertukaran; menukar"
+  },
+  {
+    "source": 374,
+    "k": "流行",
+    "h": "りゅうこう",
+    "m": "tren; mode; penyebaran"
+  },
+  {
+    "source": 375,
+    "k": "宣伝",
+    "h": "せんでん",
+    "m": "promosi; publisitas; iklan"
+  },
+  {
+    "source": 376,
+    "k": "広告",
+    "h": "こうこく",
+    "m": "iklan; periklanan"
+  },
+  {
+    "source": 377,
+    "k": "注目",
+    "h": "ちゅうもく",
+    "m": "perhatian; memperhatikan"
+  },
+  {
+    "source": 378,
+    "k": "通訳",
+    "h": "つうやく",
+    "m": "penerjemahan lisan; juru bahasa"
+  },
+  {
+    "source": 379,
+    "k": "翻訳",
+    "h": "ほんやく",
+    "m": "penerjemahan tulisan; terjemahan"
+  },
+  {
+    "source": 380,
+    "k": "伝言",
+    "h": "でんごん",
+    "m": "pesan yang dititipkan"
+  },
+  {
+    "source": 381,
+    "k": "報告",
+    "h": "ほうこく",
+    "m": "laporan; melaporkan"
+  },
+  {
+    "source": 382,
+    "k": "録画",
+    "h": "ろくが",
+    "m": "rekaman video; merekam video"
+  },
+  {
+    "source": 383,
+    "k": "混雑",
+    "h": "こんざつ",
+    "m": "keramaian; kepadatan; penuh sesak"
+  },
+  {
+    "source": 384,
+    "k": "渋滞",
+    "h": "じゅうたい",
+    "m": "kemacetan"
+  },
+  {
+    "source": 385,
+    "k": "衝突",
+    "h": "しょうとつ",
+    "m": "tabrakan; benturan; konflik"
+  },
+  {
+    "source": 386,
+    "k": "被害",
+    "h": "ひがい",
+    "m": "kerugian; kerusakan; dampak buruk"
+  },
+  {
+    "source": 387,
+    "k": "事故",
+    "h": "じこ",
+    "m": "kecelakaan"
+  },
+  {
+    "source": 388,
+    "k": "事件",
+    "h": "じけん",
+    "m": "insiden; kasus; peristiwa"
+  },
+  {
+    "source": 389,
+    "k": "故障",
+    "h": "こしょう",
+    "m": "kerusakan; gangguan mesin"
+  },
+  {
+    "source": 390,
+    "k": "修理",
+    "h": "しゅうり",
+    "m": "perbaikan; memperbaiki"
+  },
+  {
+    "source": 391,
+    "k": "停電",
+    "h": "ていでん",
+    "m": "mati listrik; pemadaman listrik"
+  },
+  {
+    "source": 392,
+    "k": "調子",
+    "h": "ちょうし",
+    "m": "kondisi; keadaan; performa"
+  },
+  {
+    "source": 393,
+    "k": "緊張",
+    "h": "きんちょう",
+    "m": "tegang; ketegangan"
+  },
+  {
+    "source": 394,
+    "k": "自信",
+    "h": "じしん",
+    "m": "kepercayaan diri"
+  },
+  {
+    "source": 395,
+    "k": "自慢",
+    "h": "じまん",
+    "m": "bangga; membanggakan; menyombongkan"
+  },
+  {
+    "source": 396,
+    "k": "感心",
+    "h": "かんしん",
+    "m": "kagum; terkesan"
+  },
+  {
+    "source": 397,
+    "k": "感動",
+    "h": "かんどう",
+    "m": "terharu; tersentuh; rasa terkesan"
+  },
+  {
+    "source": 398,
+    "k": "興奮",
+    "h": "こうふん",
+    "m": "kegembiraan; bersemangat; kegirangan"
+  },
+  {
+    "source": 399,
+    "k": "感想",
+    "h": "かんそう",
+    "m": "kesan; pendapat setelah mengalami sesuatu"
+  },
+  {
+    "source": 400,
+    "k": "予想",
+    "h": "よそう",
+    "m": "perkiraan; prediksi"
+  },
+  {
+    "source": 401,
+    "k": "専門",
+    "h": "せんもん",
+    "m": "keahlian; bidang khusus; spesialisasi"
+  },
+  {
+    "source": 402,
+    "k": "研究",
+    "h": "けんきゅう",
+    "m": "penelitian; riset"
+  },
+  {
+    "source": 403,
+    "k": "調査",
+    "h": "ちょうさ",
+    "m": "penyelidikan; survei; pemeriksaan"
+  },
+  {
+    "source": 404,
+    "k": "原因",
+    "h": "げんいん",
+    "m": "penyebab; sebab"
+  },
+  {
+    "source": 405,
+    "k": "結果",
+    "h": "けっか",
+    "m": "hasil; akibat"
+  },
+  {
+    "source": 406,
+    "k": "解決",
+    "h": "かいけつ",
+    "m": "penyelesaian; solusi"
+  },
+  {
+    "source": 407,
+    "k": "確認",
+    "h": "かくにん",
+    "m": "konfirmasi; memastikan; memeriksa"
+  },
+  {
+    "source": 408,
+    "k": "利用",
+    "h": "りよう",
+    "m": "penggunaan; memanfaatkan"
+  },
+  {
+    "source": 409,
+    "k": "理解",
+    "h": "りかい",
+    "m": "pemahaman; memahami"
+  },
+  {
+    "source": 410,
+    "k": "発見",
+    "h": "はっけん",
+    "m": "penemuan; menemukan"
+  },
+  {
+    "source": 411,
+    "k": "発明",
+    "h": "はつめい",
+    "m": "penemuan; menciptakan/invensi"
+  },
+  {
+    "source": 412,
+    "k": "関係",
+    "h": "かんけい",
+    "m": "hubungan; keterkaitan"
+  },
+  {
+    "source": 413,
+    "k": "団体",
+    "h": "だんたい",
+    "m": "kelompok; organisasi"
+  },
+  {
+    "source": 414,
+    "k": "選挙",
+    "h": "せんきょ",
+    "m": "pemilihan umum; pemilu"
+  },
+  {
+    "source": 415,
+    "k": "税金",
+    "h": "ぜいきん",
+    "m": "pajak"
+  },
+  {
+    "source": 416,
+    "k": "責任",
+    "h": "せきにん",
+    "m": "tanggung jawab"
+  },
+  {
+    "source": 417,
+    "k": "書類",
+    "h": "しょるい",
+    "m": "dokumen; berkas"
+  },
+  {
+    "source": 418,
+    "k": "題名",
+    "h": "だいめい",
+    "m": "judul"
+  },
+  {
+    "source": 419,
+    "k": "条件",
+    "h": "じょうけん",
+    "m": "syarat; kondisi"
+  },
+  {
+    "source": 420,
+    "k": "締め切り",
+    "h": "しめきり",
+    "m": "batas waktu; tenggat"
+  },
+  {
+    "source": 421,
+    "k": "期間",
+    "h": "きかん",
+    "m": "periode; jangka waktu"
+  },
+  {
+    "source": 422,
+    "k": "倍",
+    "h": "ばい",
+    "m": "kali lipat"
+  },
+  {
+    "source": 423,
+    "k": "くじ",
+    "h": "くじ",
+    "m": "undian; lotre"
+  },
+  {
+    "source": 424,
+    "k": "近道",
+    "h": "ちかみち",
+    "m": "jalan pintas"
+  },
+  {
+    "source": 425,
+    "k": "中心",
+    "h": "ちゅうしん",
+    "m": "pusat; tengah"
+  },
+  {
+    "source": 426,
+    "k": "辺り",
+    "h": "あたり",
+    "m": "sekitar; daerah sekitar"
+  },
+  {
+    "source": 427,
+    "k": "周り",
+    "h": "まわり",
+    "m": "sekitar; sekeliling; orang/benda di sekitar"
+  },
+  {
+    "source": 427,
+    "k": "回り",
+    "h": "まわり",
+    "m": "sekitar; sekeliling; orang/benda di sekitar"
+  },
+  {
+    "source": 428,
+    "k": "穴",
+    "h": "あな",
+    "m": "lubang"
+  },
+  {
+    "source": 429,
+    "k": "列",
+    "h": "れつ",
+    "m": "barisan; antrean"
+  },
+  {
+    "source": 430,
+    "k": "幅",
+    "h": "はば",
+    "m": "lebar; rentang; kisaran"
+  },
+  {
+    "source": 431,
+    "k": "範囲",
+    "h": "はんい",
+    "m": "cakupan; lingkup; rentang"
+  },
+  {
+    "source": 432,
+    "k": "内容",
+    "h": "ないよう",
+    "m": "isi; konten"
+  },
+  {
+    "source": 433,
+    "k": "中身",
+    "h": "なかみ",
+    "m": "isi; bagian dalam"
+  },
+  {
+    "source": 434,
+    "k": "特徴",
+    "h": "とくちょう",
+    "m": "ciri khas; karakteristik"
+  },
+  {
+    "source": 435,
+    "k": "普通",
+    "h": "ふつう",
+    "m": "biasa; normal; umum"
+  },
+  {
+    "source": 436,
+    "k": "当たり前",
+    "h": "あたりまえ",
+    "m": "wajar; sudah semestinya"
+  },
+  {
+    "source": 437,
+    "k": "偽",
+    "h": "にせ",
+    "m": "palsu; tiruan"
+  },
+  {
+    "source": 438,
+    "k": "別",
+    "h": "べつ",
+    "m": "berbeda; lain; terpisah"
+  },
+  {
+    "source": 439,
+    "k": "国籍",
+    "h": "こくせき",
+    "m": "kewarganegaraan"
+  },
+  {
+    "source": 440,
+    "k": "東洋",
+    "h": "とうよう",
+    "m": "Timur; dunia Timur"
+  },
+  {
+    "source": 441,
+    "k": "西洋",
+    "h": "せいよう",
+    "m": "Barat; dunia Barat"
+  },
+  {
+    "source": 442,
+    "k": "国際",
+    "h": "こくさい",
+    "m": "internasional"
+  },
+  {
+    "source": 443,
+    "k": "自然",
+    "h": "しぜん",
+    "m": "alam; alami"
+  },
+  {
+    "source": 444,
+    "k": "景色",
+    "h": "けしき",
+    "m": "pemandangan"
+  },
+  {
+    "source": 445,
+    "k": "宗教",
+    "h": "しゅうきょう",
+    "m": "agama"
+  },
+  {
+    "source": 446,
+    "k": "愛",
+    "h": "あい",
+    "m": "cinta; kasih sayang"
+  },
+  {
+    "source": 447,
+    "k": "届く",
+    "h": "とどく",
+    "m": "sampai; terkirim; terjangkau"
+  },
+  {
+    "source": 448,
+    "k": "届ける",
+    "h": "とどける",
+    "m": "mengantarkan; menyampaikan; melaporkan"
+  },
+  {
+    "source": 449,
+    "k": "かく",
+    "h": "かく",
+    "m": "menggaruk; mengeluarkan (keringat); menulis/menggambar"
+  },
+  {
+    "source": 450,
+    "k": "つかむ",
+    "h": "つかむ",
+    "m": "meraih; menggenggam; menangkap; memahami"
+  },
+  {
+    "source": 451,
+    "k": "握る",
+    "h": "にぎる",
+    "m": "menggenggam; memegang erat"
+  },
+  {
+    "source": 452,
+    "k": "押さえる",
+    "h": "おさえる",
+    "m": "menekan; menahan; memegang"
+  },
+  {
+    "source": 453,
+    "k": "近づく",
+    "h": "ちかづく",
+    "m": "mendekat"
+  },
+  {
+    "source": 454,
+    "k": "近づける",
+    "h": "ちかづける",
+    "m": "mendekatkan"
+  },
+  {
+    "source": 455,
+    "k": "合う",
+    "h": "あう",
+    "m": "cocok; sesuai; pas"
+  },
+  {
+    "source": 456,
+    "k": "合わせる",
+    "h": "あわせる",
+    "m": "mencocokkan; menyesuaikan; menggabungkan"
+  },
+  {
+    "source": 457,
+    "k": "当たる",
+    "h": "あたる",
+    "m": "mengenai; terkena; tepat; menang"
+  },
+  {
+    "source": 458,
+    "k": "当てる",
+    "h": "あてる",
+    "m": "mengenakan; menempelkan; menebak dengan tepat"
+  },
+  {
+    "source": 459,
+    "k": "比べる",
+    "h": "くらべる",
+    "m": "membandingkan"
+  },
+  {
+    "source": 460,
+    "k": "似合う",
+    "h": "にあう",
+    "m": "cocok; serasi (pakaian/gaya)"
+  },
+  {
+    "source": 461,
+    "k": "似る",
+    "h": "にる",
+    "m": "mirip; menyerupai"
+  },
+  {
+    "source": 462,
+    "k": "似せる",
+    "h": "にせる",
+    "m": "meniru; membuat menyerupai"
+  },
+  {
+    "source": 463,
+    "k": "分かれる",
+    "h": "わかれる",
+    "m": "terbagi; terpisah"
+  },
+  {
+    "source": 464,
+    "k": "分ける",
+    "h": "わける",
+    "m": "membagi; memisahkan"
+  },
+  {
+    "source": 465,
+    "k": "足す",
+    "h": "たす",
+    "m": "menambah"
+  },
+  {
+    "source": 466,
+    "k": "引く",
+    "h": "ひく",
+    "m": "menarik; mengurangi; menarik garis; memainkan alat musik"
+  },
+  {
+    "source": 467,
+    "k": "増える",
+    "h": "ふえる",
+    "m": "bertambah; meningkat"
+  },
+  {
+    "source": 468,
+    "k": "増やす",
+    "h": "ふやす",
+    "m": "menambah; meningkatkan"
+  },
+  {
+    "source": 469,
+    "k": "減る",
+    "h": "へる",
+    "m": "berkurang; menurun"
+  },
+  {
+    "source": 470,
+    "k": "減らす",
+    "h": "へらす",
+    "m": "mengurangi"
+  },
+  {
+    "source": 471,
+    "k": "変わる",
+    "h": "かわる",
+    "m": "berubah"
+  },
+  {
+    "source": 472,
+    "k": "変える",
+    "h": "かえる",
+    "m": "mengubah"
+  },
+  {
+    "source": 473,
+    "k": "替わる",
+    "h": "かわる",
+    "m": "digantikan; berubah; bertukar"
+  },
+  {
+    "source": 473,
+    "k": "代わる",
+    "h": "かわる",
+    "m": "digantikan; berubah; bertukar"
+  },
+  {
+    "source": 473,
+    "k": "換わる",
+    "h": "かわる",
+    "m": "digantikan; berubah; bertukar"
+  },
+  {
+    "source": 474,
+    "k": "替える",
+    "h": "かえる",
+    "m": "mengganti; menukar"
+  },
+  {
+    "source": 474,
+    "k": "代える",
+    "h": "かえる",
+    "m": "mengganti; menukar"
+  },
+  {
+    "source": 474,
+    "k": "換える",
+    "h": "かえる",
+    "m": "mengganti; menukar"
+  },
+  {
+    "source": 475,
+    "k": "返る",
+    "h": "かえる",
+    "m": "kembali; dikembalikan"
+  },
+  {
+    "source": 476,
+    "k": "返す",
+    "h": "かえす",
+    "m": "mengembalikan"
+  },
+  {
+    "source": 477,
+    "k": "譲る",
+    "h": "ゆずる",
+    "m": "memberikan; menyerahkan; mengalah; mewariskan"
+  },
+  {
+    "source": 478,
+    "k": "助かる",
+    "h": "たすかる",
+    "m": "tertolong; selamat; sangat membantu"
+  },
+  {
+    "source": 479,
+    "k": "助ける",
+    "h": "たすける",
+    "m": "menolong; menyelamatkan; membantu"
+  },
+  {
+    "source": 480,
+    "k": "いじめる",
+    "h": "いじめる",
+    "m": "merundung; mengganggu; menyiksa"
+  },
+  {
+    "source": 481,
+    "k": "だます",
+    "h": "だます",
+    "m": "menipu"
+  },
+  {
+    "source": 482,
+    "k": "盗む",
+    "h": "ぬすむ",
+    "m": "mencuri"
+  },
+  {
+    "source": 483,
+    "k": "刺さる",
+    "h": "ささる",
+    "m": "tertusuk; menancap"
+  },
+  {
+    "source": 484,
+    "k": "刺す",
+    "h": "さす",
+    "m": "menusuk; menyengat"
+  },
+  {
+    "source": 485,
+    "k": "殺す",
+    "h": "ころす",
+    "m": "membunuh"
+  },
+  {
+    "source": 486,
+    "k": "隠れる",
+    "h": "かくれる",
+    "m": "bersembunyi; tertutup"
+  },
+  {
+    "source": 487,
+    "k": "隠す",
+    "h": "かくす",
+    "m": "menyembunyikan; menutupi"
+  },
+  {
+    "source": 488,
+    "k": "埋まる",
+    "h": "うまる",
+    "m": "tertimbun; terisi; terkubur"
+  },
+  {
+    "source": 489,
+    "k": "埋める",
+    "h": "うめる",
+    "m": "mengubur; menimbun; mengisi"
+  },
+  {
+    "source": 490,
+    "k": "囲む",
+    "h": "かこむ",
+    "m": "mengelilingi; mengepung"
+  },
+  {
+    "source": 491,
+    "k": "詰まる",
+    "h": "つまる",
+    "m": "penuh; tersumbat; padat"
+  },
+  {
+    "source": 492,
+    "k": "詰める",
+    "h": "つめる",
+    "m": "mengisi; memadatkan; memperpendek jarak"
+  },
+  {
+    "source": 493,
+    "k": "開く",
+    "h": "ひらく",
+    "m": "membuka; terbuka; berkembang; mengadakan"
+  },
+  {
+    "source": 494,
+    "k": "閉じる",
+    "h": "とじる",
+    "m": "menutup"
+  },
+  {
+    "source": 495,
+    "k": "飛ぶ",
+    "h": "とぶ",
+    "m": "terbang; terpercik; bergegas; terlewat; hilang (data)"
+  },
+  {
+    "source": 496,
+    "k": "飛ばす",
+    "h": "とばす",
+    "m": "menerbangkan; meniup hingga terbang; melewati; melaju"
+  },
+  {
+    "source": 497,
+    "k": "振る",
+    "h": "ふる",
+    "m": "mengayunkan; mengocok; menaburkan; menolak"
+  },
+  {
+    "source": 498,
+    "k": "めくる",
+    "h": "めくる",
+    "m": "membalik halaman; membuka lembaran"
+  },
+  {
+    "source": 499,
+    "k": "見かける",
+    "h": "みかける",
+    "m": "melihat; menjumpai; kebetulan melihat"
+  },
+  {
+    "source": 500,
+    "k": "確かめる",
+    "h": "たしかめる",
+    "m": "memastikan; memeriksa; mengonfirmasi"
+  },
+  {
+    "source": 501,
+    "k": "試す",
+    "h": "ためす",
+    "m": "mencoba; menguji"
+  },
+  {
+    "source": 502,
+    "k": "繰り返す",
+    "h": "くりかえす",
+    "m": "mengulangi; mengulang kembali"
+  },
+  {
+    "source": 503,
+    "k": "訳す",
+    "h": "やくす",
+    "m": "menerjemahkan"
+  },
+  {
+    "source": 504,
+    "k": "行う",
+    "h": "おこなう",
+    "m": "melaksanakan; melakukan; mengadakan"
+  },
+  {
+    "source": 505,
+    "k": "間違う",
+    "h": "まちがう",
+    "m": "salah; keliru"
+  },
+  {
+    "source": 506,
+    "k": "間違える",
+    "h": "まちがえる",
+    "m": "membuat kesalahan; salah memilih/menjawab"
+  },
+  {
+    "source": 507,
+    "k": "許す",
+    "h": "ゆるす",
+    "m": "mengizinkan; memaafkan"
+  },
+  {
+    "source": 508,
+    "k": "慣れる",
+    "h": "なれる",
+    "m": "terbiasa; menjadi terbiasa"
+  },
+  {
+    "source": 509,
+    "k": "慣らす",
+    "h": "ならす",
+    "m": "membiasakan; melatih agar terbiasa"
+  },
+  {
+    "source": 510,
+    "k": "立つ",
+    "h": "たつ",
+    "m": "berdiri"
+  },
+  {
+    "source": 511,
+    "k": "立てる",
+    "h": "たてる",
+    "m": "mendirikan; menegakkan; membuat berdiri"
+  },
+  {
+    "source": 512,
+    "k": "建つ",
+    "h": "たつ",
+    "m": "dibangun; berdiri (bangunan)"
+  },
+  {
+    "source": 513,
+    "k": "建てる",
+    "h": "たてる",
+    "m": "membangun; mendirikan"
+  },
+  {
+    "source": 514,
+    "k": "育つ",
+    "h": "そだつ",
+    "m": "tumbuh; berkembang; dibesarkan"
+  },
+  {
+    "source": 515,
+    "k": "育てる",
+    "h": "そだてる",
+    "m": "membesarkan; mendidik; menumbuhkan"
+  },
+  {
+    "source": 516,
+    "k": "生える",
+    "h": "はえる",
+    "m": "tumbuh (rambut, gigi, rumput)"
+  },
+  {
+    "source": 517,
+    "k": "生やす",
+    "h": "はやす",
+    "m": "menumbuhkan (rambut, janggut, dll.)"
+  },
+  {
+    "source": 518,
+    "k": "汚れる",
+    "h": "よごれる",
+    "m": "menjadi kotor; tercemar"
+  },
+  {
+    "source": 519,
+    "k": "汚す",
+    "h": "よごす",
+    "m": "mengotori; mencemari"
+  },
+  {
+    "source": 520,
+    "k": "壊れる",
+    "h": "こわれる",
+    "m": "rusak; pecah; tidak berfungsi"
+  },
+  {
+    "source": 521,
+    "k": "壊す",
+    "h": "こわす",
+    "m": "merusakkan; memecahkan"
+  },
+  {
+    "source": 522,
+    "k": "割れる",
+    "h": "われる",
+    "m": "pecah; retak; terbagi"
+  },
+  {
+    "source": 523,
+    "k": "割る",
+    "h": "わる",
+    "m": "memecahkan; membagi"
+  },
+  {
+    "source": 524,
+    "k": "折れる",
+    "h": "おれる",
+    "m": "patah; terlipat"
+  },
+  {
+    "source": 525,
+    "k": "折る",
+    "h": "おる",
+    "m": "mematahkan; melipat"
+  },
+  {
+    "source": 526,
+    "k": "破れる",
+    "h": "やぶれる",
+    "m": "robek; pecah; dilanggar"
+  },
+  {
+    "source": 527,
+    "k": "破る",
+    "h": "やぶる",
+    "m": "merobek; melanggar; memecahkan (rekor)"
+  },
+  {
+    "source": 528,
+    "k": "曲がる",
+    "h": "まがる",
+    "m": "berbelok; bengkok"
+  },
+  {
+    "source": 529,
+    "k": "曲げる",
+    "h": "まげる",
+    "m": "membengkokkan; menekuk"
+  },
+  {
+    "source": 530,
+    "k": "外れる",
+    "h": "はずれる",
+    "m": "lepas; meleset; keluar; tidak tepat"
+  },
+  {
+    "source": 531,
+    "k": "外す",
+    "h": "はずす",
+    "m": "melepas; mencopot; mengeluarkan; meleset"
+  },
+  {
+    "source": 532,
+    "k": "揺れる",
+    "h": "ゆれる",
+    "m": "bergoyang; bergetar; goyah"
+  },
+  {
+    "source": 533,
+    "k": "揺らす",
+    "h": "ゆらす",
+    "m": "menggoyangkan; mengayunkan"
+  },
+  {
+    "source": 534,
+    "k": "流れる",
+    "h": "ながれる",
+    "m": "mengalir; hanyut; tersebar"
+  },
+  {
+    "source": 535,
+    "k": "流す",
+    "h": "ながす",
+    "m": "mengalirkan; membilas; memutar/menyiarkan"
+  },
+  {
+    "source": 536,
+    "k": "濡れる",
+    "h": "ぬれる",
+    "m": "menjadi basah"
+  },
+  {
+    "source": 537,
+    "k": "濡らす",
+    "h": "ぬらす",
+    "m": "membasahi"
+  },
+  {
+    "source": 538,
+    "k": "迷う",
+    "h": "まよう",
+    "m": "tersesat; bingung; ragu-ragu"
+  },
+  {
+    "source": 539,
+    "k": "悩む",
+    "h": "なやむ",
+    "m": "khawatir; menderita; bingung memikirkan"
+  },
+  {
+    "source": 540,
+    "k": "慌てる",
+    "h": "あわてる",
+    "m": "panik; tergesa-gesa"
+  },
+  {
+    "source": 541,
+    "k": "覚める",
+    "h": "さめる",
+    "m": "terbangun; sadar; hilang (mabuk/perasaan)"
+  },
+  {
+    "source": 542,
+    "k": "覚ます",
+    "h": "さます",
+    "m": "membangunkan; menyadarkan"
+  },
+  {
+    "source": 543,
+    "k": "眠る",
+    "h": "ねむる",
+    "m": "tidur"
+  },
+  {
+    "source": 544,
+    "k": "祈る",
+    "h": "いのる",
+    "m": "berdoa; mendoakan"
+  },
+  {
+    "source": 545,
+    "k": "祝う",
+    "h": "いわう",
+    "m": "merayakan; mengucapkan selamat"
+  },
+  {
+    "source": 546,
+    "k": "感じる",
+    "h": "かんじる",
+    "m": "merasakan; merasa"
+  }
+]

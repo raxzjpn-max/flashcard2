@@ -8,11 +8,18 @@ for (const [index, script] of scripts.entries()) {
   catch (error) { throw new Error(`Script ${index + 1}: ${error.message}`); }
 }
 
-const setsMatch = html.match(/const sets = (\[[\s\S]*?\]);\r?\nconst allWords = sets\.flat\(\)/);
+const setsMatch = html.match(/const sets = (\[[\s\S]*?\]);\r?\nconst pdfPriorityVocabulary/);
 if (!setsMatch) throw new Error("Data sets tidak ditemukan");
 const sets = JSON.parse(setsMatch[1]);
-const words = sets.flat();
 const norm = value => String(value || "").normalize("NFKC").replace(/\s+/g, "");
+const pdfMatch = html.match(/const pdfPriorityVocabulary = (\[[\s\S]*?\]);\r?\nconst vocabularyIdentity/);
+if (!pdfMatch) throw new Error("Data prioritas PDF tidak ditemukan");
+const pdfWords = JSON.parse(pdfMatch[1]);
+const sourceWords = sets.flat();
+const sourceKeys = new Set(sourceWords.map(word => `${norm(word.k)}|${norm(word.h)}`));
+const addedWords = pdfWords.filter(word => !sourceKeys.has(`${norm(word.k)}|${norm(word.h)}`)).map(word => ({...word,level:"N4-N3",kind:"kotoba"}));
+for (let offset = 0; offset < addedWords.length; offset += 25) sets.push(addedWords.slice(offset, offset + 25));
+const words = sets.flat();
 const keys = words.map(word => `${norm(word.k)}|${norm(word.h)}`);
 const duplicates = keys.filter((key, index) => keys.indexOf(key) !== index);
 const missing = words.filter(word => !word.k || !word.h || !word.m);
