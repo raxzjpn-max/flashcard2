@@ -845,6 +845,9 @@ body{min-width:0}
 .actions{grid-template-columns:minmax(220px,420px);justify-content:center}
 #shuffle.is-active{border-color:#204fc4 !important;background:linear-gradient(135deg,#2f6df6,#1748bd) !important;color:#fff !important;box-shadow:0 8px 18px rgba(32,79,196,.25)}
 .nav{grid-template-columns:repeat(3,minmax(0,1fr))}.next-group{border-color:#8ed3b7 !important;background:linear-gradient(135deg,#eafaf3,#d9f5e8) !important;color:#107451 !important;box-shadow:0 7px 16px rgba(22,132,92,.12)}.next-group:hover{border-color:#16845c !important;background:linear-gradient(135deg,#dff7ec,#c8efdd) !important}
+.flash-group-pagination{display:flex;justify-content:center;width:min(100%,900px);margin:16px auto 0;padding:13px;border:2px solid #c7d6ea;border-radius:18px;background:linear-gradient(110deg,#f5f8ff,#fff 50%,#f1fbf6);box-shadow:0 10px 28px rgba(16,47,104,.1)}
+.flash-group-pagination .next-group{width:min(100%,430px);min-height:54px;padding:12px 18px;font-size:15px;font-weight:850}
+.flash-group-pagination .next-group:disabled{cursor:not-allowed;opacity:.62;filter:grayscale(.18);box-shadow:none}
 .previous-group{border-color:#b9c9ee !important;background:linear-gradient(135deg,#f2f5ff,#e7edff) !important;color:#354bb8 !important;box-shadow:0 7px 16px rgba(53,75,184,.1)}.previous-group:hover{border-color:#6077e7 !important;background:#e5ebff !important}
 .table-pagination{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;margin:18px 0 4px;padding:14px;border:2px solid #c7d6ea;border-radius:18px;background:linear-gradient(110deg,#f5f8ff,#fff 50%,#f1fbf6);box-shadow:0 10px 28px rgba(16,47,104,.1)}.table-pagination button{min-height:54px;width:100%;font-size:14px;font-weight:850}.table-pagination .previous-group{grid-column:1}.table-pagination .next-group{grid-column:2}
 .memory-legend{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:7px;margin-top:10px;color:#5d6e87;font-size:12px;font-weight:750}.legend-dot{display:inline-block;width:11px;height:11px;border-radius:50%;border:1px solid transparent}.unlearned-dot{background:#ffdfe3;border-color:#e97985}.learned-dot{background:#dcf5e9;border-color:#72c5a1}
@@ -876,6 +879,7 @@ body{min-width:0}
   .topright .stats{grid-column:1/-1;min-width:0;text-align:left;padding:4px 2px}
   .topright button{width:100%;min-width:0;white-space:normal;line-height:1.25}
   .nav{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .flash-group-pagination{margin-top:12px;padding:9px;border-radius:14px}.flash-group-pagination .next-group{width:100%;min-height:50px;font-size:13px}
   .table-pagination{gap:8px;margin-top:12px;padding:9px;border-radius:14px}.table-pagination button{min-height:48px;padding:9px 7px;font-size:12px;line-height:1.25}
   #vocabTable.shown-cols-4 th,#vocabTable.shown-cols-4 td{font-size:11px}
   #vocabTable.shown-cols-3 th,#vocabTable.shown-cols-3 td{font-size:13px;padding:11px 5px}
@@ -988,6 +992,7 @@ body::before{background-image:linear-gradient(rgba(8,24,58,.08),rgba(8,24,58,.08
 .vocab-preview-example-jp{color:#153875;font-size:clamp(17px,3vw,21px);font-weight:850;line-height:1.55}
 .vocab-preview-example-reading{margin-top:7px;color:#5b6f8c;font-size:14px;font-weight:700;line-height:1.55}
 .vocab-preview-example-meaning{margin-top:9px;padding-top:9px;border-top:1px solid #d7e1f0;color:#a32637;font-size:14px;font-weight:750;line-height:1.55}
+.kanji-readings{display:grid;gap:10px;margin-top:18px}.kanji-readings-title{color:#2457d6;font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.kanji-reading-card{display:grid;grid-template-columns:56px minmax(0,1fr);gap:12px;align-items:center;padding:13px;border:1.5px solid #c9d8ef;border-radius:15px;background:linear-gradient(145deg,#fff,#edf4ff)}.kanji-reading-char{display:grid;place-items:center;min-height:56px;border-radius:13px;background:linear-gradient(145deg,#2457d6,#183f91);color:#fff;font-size:34px;font-weight:900;box-shadow:0 7px 17px rgba(36,87,214,.2)}.kanji-reading-lines{display:grid;gap:6px;min-width:0}.kanji-reading-line{display:grid;grid-template-columns:72px minmax(0,1fr);gap:8px;color:#1b365f;font-size:14px;line-height:1.45}.kanji-reading-line span{color:#708099;font-size:12px;font-weight:850}.kanji-reading-line strong{overflow-wrap:anywhere}.kanji-readings-status{padding:14px;border:1px dashed #b9c9e2;border-radius:14px;background:#f7faff;color:#60718a;font-size:14px;text-align:center}.kanji-readings-source{margin-top:10px !important;font-size:11px}.kanji-readings-source a{color:#2457d6}
 @keyframes previewFade{from{opacity:0}to{opacity:1}}@keyframes previewRise{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:none}}
 @media(max-width:640px){.vocab-preview-modal{padding:14px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}.vocab-preview-card{padding:30px 19px 23px;border-radius:22px}.vocab-preview-row{grid-template-columns:76px minmax(0,1fr)}}
 .writing-open{width:100%;margin-top:18px;min-height:48px}.writing-modal{position:fixed;z-index:1100;inset:0;display:grid;place-items:center;padding:18px;background:rgba(7,20,48,.58);backdrop-filter:blur(11px);-webkit-backdrop-filter:blur(11px);animation:previewFade .18s ease}.writing-card{position:relative;width:min(94vw,650px);max-height:94vh;overflow:auto;padding:31px 28px 24px;border:2px solid rgba(255,255,255,.92);border-radius:27px;background:linear-gradient(145deg,#fff,#eef4ff 55%,#fff1f3);box-shadow:0 32px 90px rgba(3,14,38,.42);text-align:center;animation:previewRise .22s ease}.writing-card h2{margin:7px 0 8px;color:#102f68;font-size:clamp(24px,4vw,34px)}.writing-word{display:flex;align-items:baseline;justify-content:center;gap:12px;margin-bottom:8px}.writing-word strong{color:#b42335;font-size:clamp(23px,4vw,32px)}.writing-word span{color:#64748b;font-weight:750}.writing-counter{color:#2457d6;font-size:13px;font-weight:850}.writing-canvas{display:grid;place-items:center;width:min(290px,74vw);aspect-ratio:1;margin:12px auto;border:2px solid #b9cbea;border-radius:20px;background-color:#fff;background-image:linear-gradient(rgba(36,87,214,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(36,87,214,.12) 1px,transparent 1px),linear-gradient(45deg,transparent 49.6%,rgba(223,52,68,.12) 50%,transparent 50.4%),linear-gradient(-45deg,transparent 49.6%,rgba(223,52,68,.12) 50%,transparent 50.4%);background-size:50% 50%,50% 50%,100% 100%,100% 100%;overflow:hidden}.writing-canvas svg{display:block}.writing-status{min-height:22px;margin:8px 0;color:#5e708a;font-size:13px;font-weight:750}.writing-controls{display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:8px;margin-top:12px}.writing-controls button{min-height:47px;padding:9px 10px;font-size:13px}.writing-card>small{display:block;margin-top:13px;color:#718097}.writing-error{color:#b42335 !important}
@@ -1148,7 +1153,6 @@ body::before{background-image:linear-gradient(rgba(8,24,58,.08),rgba(8,24,58,.08
           <button id="grammarCombinePrevStudy">Gabungkan sebelumnya</button>
           <button id="grammarCombineFirstStudy">Gabungkan dari awal</button>
           <button id="grammarOnlyUnlearnedStudy">○ Belum paham</button>
-          <button class="next-group" id="grammarNextGroup">Bagian selanjutnya ⇥</button>
           <button id="grammarToList">Daftar →</button>
         </div>
       </details>
@@ -1178,6 +1182,9 @@ body::before{background-image:linear-gradient(rgba(8,24,58,.08),rgba(8,24,58,.08
     <button id="grammarPrev">← Sebelumnya</button>
     <button class="primary" id="grammarShuffle">⤨ Acak</button>
     <button id="grammarNext">Berikutnya →</button>
+  </div>
+  <div class="flash-group-pagination">
+    <button class="next-group" id="grammarNextGroup">Lanjut ke bagian selanjutnya ⇥</button>
   </div>
   <div class="footer">Ketuk/Space untuk membalik • Geser atau gunakan tombol panah untuk berpindah.</div>
 </section>
@@ -1234,12 +1241,11 @@ body::before{background-image:linear-gradient(rgba(8,24,58,.08),rgba(8,24,58,.08
     <div class="vocab-preview-divider"></div>
     <div class="vocab-preview-row"><span>Hiragana</span><strong id="vocabPreviewHiragana"></strong></div>
     <div class="vocab-preview-row"><span>Arti</span><strong id="vocabPreviewMeaning"></strong></div>
-    <div class="vocab-preview-example">
-      <div class="vocab-preview-example-title">Contoh Kalimat</div>
-      <div class="vocab-preview-example-jp" id="vocabPreviewExample"></div>
-      <div class="vocab-preview-example-reading" id="vocabPreviewExampleReading"></div>
-      <div class="vocab-preview-example-meaning" id="vocabPreviewExampleMeaning"></div>
+    <div class="kanji-readings">
+      <div class="kanji-readings-title">Bacaan setiap Kanji</div>
+      <div id="vocabPreviewReadings" aria-live="polite"></div>
     </div>
+    <small class="kanji-readings-source">Bacaan Kanji: <a href="https://kanjiapi.dev/" target="_blank" rel="noopener noreferrer">KANJIDIC melalui KanjiAPI.dev</a></small>
     <button class="primary writing-open" id="vocabWritingOpen">✍ Cara Tulis Kanji</button>
     <small>Ketuk area luar atau tekan Esc untuk menutup.</small>
   </div>
@@ -1301,7 +1307,6 @@ body::before{background-image:linear-gradient(rgba(8,24,58,.08),rgba(8,24,58,.08
           <button class="fullscreen-toggle">⛶ Layar Penuh</button>
           <button id="combinePrevStudy">Gabungkan sebelumnya</button>
           <button id="combineFromFirstStudy">Gabungkan dari awal</button>
-          <button class="next-group" id="nextGroupStudy">Bagian selanjutnya ⇥</button>
           <button id="toWritingStudy">✍ Cara Tulis Kanji</button>
           <button class="quiz-button" id="toQuizStudy">Kuis →</button>
           <button id="toTable">Tabel →</button>
@@ -1339,6 +1344,9 @@ body::before{background-image:linear-gradient(rgba(8,24,58,.08),rgba(8,24,58,.08
     <button id="prev">← Sebelumnya</button>
     <button id="shuffle" type="button" aria-pressed="false">⤨ Acak: OFF</button>
     <button id="next">Berikutnya →</button>
+  </div>
+  <div class="flash-group-pagination">
+    <button class="next-group" id="nextGroupStudy">Lanjut ke bagian selanjutnya ⇥</button>
   </div>
   <div class="footer">Progres hafalan tersimpan otomatis.</div>
 </section>
@@ -1378,6 +1386,22 @@ const latestPdfAdditions=[
   {k:"川",h:"かわ",m:"sungai"},
   {k:"河",h:"かわ",m:"sungai"}
 ];
+const completeVerbVocabulary=[
+  {k:"食べる",h:"たべる",m:"makan"},{k:"見る",h:"みる",m:"melihat"},{k:"起きる",h:"おきる",m:"bangun"},
+  {k:"寝る",h:"ねる",m:"tidur"},{k:"着る",h:"きる",m:"memakai pakaian"},{k:"借りる",h:"かりる",m:"meminjam"},
+  {k:"浴びる",h:"あびる",m:"mandi / mengguyur tubuh"},{k:"開ける",h:"あける",m:"membuka"},{k:"閉める",h:"しめる",m:"menutup"},
+  {k:"教える",h:"おしえる",m:"mengajar / memberi tahu"},{k:"答える",h:"こたえる",m:"menjawab"},{k:"忘れる",h:"わすれる",m:"lupa"},
+  {k:"覚える",h:"おぼえる",m:"mengingat / menghafal"},{k:"考える",h:"かんがえる",m:"berpikir"},{k:"調べる",h:"しらべる",m:"memeriksa / mencari tahu"},
+  {k:"決める",h:"きめる",m:"memutuskan"},{k:"始める",h:"はじめる",m:"memulai"},{k:"続ける",h:"つづける",m:"melanjutkan"},
+  {k:"伝える",h:"つたえる",m:"menyampaikan"},{k:"変える",h:"かえる",m:"mengubah"},{k:"止める",h:"とめる",m:"menghentikan"},
+  {k:"出る",h:"でる",m:"keluar"},{k:"入れる",h:"いれる",m:"memasukkan"},{k:"降りる",h:"おりる",m:"turun dari kendaraan"},
+  {k:"できる",h:"できる",m:"bisa / dapat melakukan"}
+];
+const completeVerbKnown=new Set(sets.flat().map(word=>vocabularyPair(word)));
+const missingCompleteVerbs=completeVerbVocabulary
+  .filter(word=>!completeVerbKnown.has(vocabularyPair(word)))
+  .map(word=>({...word,ex:"",exr:"",exm:"",read:"",readr:"",readm:"",level:"N4-N3",kind:"kotoba"}));
+for(let offset=0;offset<missingCompleteVerbs.length;offset+=25)sets.push(missingCompleteVerbs.slice(offset,offset+25));
 const allKnownVocabulary=new Set(sets.flat().map(word=>vocabularyPair(word)));
 const latestPdfHash=word=>[...word.k].reduce((hash,char)=>(hash*33+char.codePointAt(0))>>>0,5381);
 const missingLatestPdfVocabulary=latestPdfAdditions
@@ -1969,15 +1993,57 @@ function openTable(i){
 
 let vocabPreviewReturnFocus=null,vocabPreviewWord=null;
 const kanjiCharacters=text=>[...text].filter(char=>/[一-龯]/.test(char));
+const KANJI_READING_CACHE_KEY="jlpt-kanji-reading-cache-v1";
+let kanjiReadingCache={};
+try{kanjiReadingCache=JSON.parse(localStorage.getItem(KANJI_READING_CACHE_KEY)||"{}")||{}}catch{}
+let vocabReadingRequest=0;
+const readingText=values=>Array.isArray(values)&&values.length?values.join("、"):"—";
+function renderKanjiReadings(items){
+  const host=$("vocabPreviewReadings");
+  host.textContent="";
+  if(!items.length){host.innerHTML='<div class="kanji-readings-status">Kosakata ini tidak mengandung Kanji.</div>';return}
+  items.forEach(item=>{
+    const card=document.createElement("div");
+    card.className="kanji-reading-card";
+    const character=document.createElement("div");character.className="kanji-reading-char";character.textContent=item.kanji;
+    const lines=document.createElement("div");lines.className="kanji-reading-lines";
+    [["On’yomi",readingText(item.on_readings)],["Kun’yomi",readingText(item.kun_readings)]].forEach(([label,value])=>{
+      const line=document.createElement("div");line.className="kanji-reading-line";
+      const name=document.createElement("span");name.textContent=label;
+      const reading=document.createElement("strong");reading.textContent=value;
+      line.append(name,reading);lines.append(line);
+    });
+    card.append(character,lines);host.append(card);
+  });
+}
+async function loadKanjiReadings(word,requestId){
+  const characters=[...new Set(kanjiCharacters(word.k))];
+  if(!characters.length){renderKanjiReadings([]);return}
+  $("vocabPreviewReadings").innerHTML='<div class="kanji-readings-status">Memuat bacaan On’yomi dan Kun’yomi…</div>';
+  const items=await Promise.all(characters.map(async kanji=>{
+    if(kanjiReadingCache[kanji])return kanjiReadingCache[kanji];
+    try{
+      const response=await fetch(`https://kanjiapi.dev/v1/kanji/${encodeURIComponent(kanji)}`);
+      if(!response.ok)throw new Error("reading-not-found");
+      const data=await response.json();
+      const item={kanji,on_readings:data.on_readings||[],kun_readings:data.kun_readings||[]};
+      kanjiReadingCache[kanji]=item;
+      try{localStorage.setItem(KANJI_READING_CACHE_KEY,JSON.stringify(kanjiReadingCache))}catch{}
+      return item;
+    }catch{return {kanji,on_readings:[],kun_readings:[],failed:true}}
+  }));
+  if(requestId!==vocabReadingRequest)return;
+  renderKanjiReadings(items);
+  if(items.every(item=>item.failed))$("vocabPreviewReadings").insertAdjacentHTML("beforeend",'<div class="kanji-readings-status">Bacaan belum dapat dimuat. Periksa koneksi internet lalu buka kembali kartu.</div>');
+}
 function openVocabPreview(word,trigger){
   vocabPreviewReturnFocus=trigger||document.activeElement;
   vocabPreviewWord=word;
   $("vocabPreviewKanji").textContent=word.k;
   $("vocabPreviewHiragana").textContent=word.h;
   $("vocabPreviewMeaning").textContent=word.m;
-  $("vocabPreviewExample").textContent=word.ex||word.read||"";
-  $("vocabPreviewExampleReading").textContent=`Furigana: ${word.exr||word.readr||"-"}`;
-  $("vocabPreviewExampleMeaning").textContent=`Arti: ${word.exm||word.readm||"-"}`;
+  const requestId=++vocabReadingRequest;
+  loadKanjiReadings(word,requestId);
   $("vocabWritingOpen").classList.toggle("hidden",kanjiCharacters(word.k).length===0);
   $("vocabPreviewModal").classList.remove("hidden");
   document.body.classList.add("modal-open");
