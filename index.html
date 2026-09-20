@@ -1028,6 +1028,7 @@ body::before{background-image:linear-gradient(rgba(8,24,58,.08),rgba(8,24,58,.08
     <summary>📝 Log Update Website</summary>
     <div class="feature-guide-content">
       <div class="feature-guide-item"><strong>18 Sep 2026</strong><span>Mengutamakan 560 kosakata dari dua materi PDF ke bagian awal. Sebanyak 242 kosakata yang belum tersedia ditambahkan tanpa menggandakan kosakata lama.</span></div>
+      <div class="feature-guide-item"><strong>20 Sep 2026</strong><span>Menambahkan kosakata unik dari materi PDF terbaru secara acak. Pembaruan website sekarang tidak lagi menghapus progres belajar yang sudah tersimpan di perangkat.</span></div>
       <div class="feature-guide-item"><strong>18 Sep 2026</strong><span>Data belajar direset untuk versi terbaru. Sesi Fokus dimulai dalam keadaan OFF dengan pilihan notifikasi: saya mengerti, jangan tampilkan lagi, atau tampilkan setiap kali diaktifkan.</span></div>
       <div class="feature-guide-item"><strong>18 Sep 2026</strong><span>Menambahkan saklar Sesi Fokus ON/OFF. Mode ON membuka flashcard bertahap, sedangkan mode OFF membuka semua bagian.</span></div>
       <div class="feature-guide-item"><strong>18 Sep 2026</strong><span>Menambahkan kalender belajar, pencatatan durasi penggunaan, jumlah kosakata harian, dan aturan reset progres setelah 48 jam tidak aktif.</span></div>
@@ -1353,6 +1354,37 @@ const missingPdfVocabulary=pdfPriorityVocabulary
   .filter(word=>!existingVocabularyPairs.has(vocabularyPair(word)))
   .map(word=>({...word,ex:"",exr:"",exm:"",read:"",readr:"",readm:"",level:"N4-N3",kind:"kotoba"}));
 for(let offset=0;offset<missingPdfVocabulary.length;offset+=25)sets.push(missingPdfVocabulary.slice(offset,offset+25));
+const latestPdfAdditions=[
+  {k:"どうやっても",h:"どうやっても",m:"bagaimanapun caranya"},
+  {k:"だけ",h:"だけ",m:"hanya"},
+  {k:"のみ",h:"のみ",m:"hanya / terbatas pada"},
+  {k:"しか",h:"しか",m:"hanya (diikuti bentuk negatif)"},
+  {k:"これ",h:"これ",m:"ini"},
+  {k:"この",h:"この",m:"ini (diikuti kata benda)"},
+  {k:"それ",h:"それ",m:"itu (dekat lawan bicara)"},
+  {k:"その",h:"その",m:"itu (diikuti kata benda)"},
+  {k:"あれ",h:"あれ",m:"itu (jauh)"},
+  {k:"あの",h:"あの",m:"itu (diikuti kata benda)"},
+  {k:"めったに",h:"めったに",m:"jarang (diikuti bentuk negatif)"},
+  {k:"ところで",h:"ところで",m:"ngomong-ngomong"},
+  {k:"因みに",h:"ちなみに",m:"sebagai tambahan / ngomong-ngomong"},
+  {k:"たった今",h:"たったいま",m:"baru saja"},
+  {k:"ただいま",h:"ただいま",m:"sekarang / baru pulang"},
+  {k:"やはり",h:"やはり",m:"seperti dugaan / tetap saja"},
+  {k:"やっぱり",h:"やっぱり",m:"seperti dugaan / ternyata"},
+  {k:"あまり",h:"あまり",m:"tidak terlalu / sisa"},
+  {k:"あんまり",h:"あんまり",m:"tidak terlalu"},
+  {k:"陰",h:"かげ",m:"bayangan / tempat teduh"},
+  {k:"川",h:"かわ",m:"sungai"},
+  {k:"河",h:"かわ",m:"sungai"}
+];
+const allKnownVocabulary=new Set(sets.flat().map(word=>vocabularyPair(word)));
+const latestPdfHash=word=>[...word.k].reduce((hash,char)=>(hash*33+char.codePointAt(0))>>>0,5381);
+const missingLatestPdfVocabulary=latestPdfAdditions
+  .filter(word=>!allKnownVocabulary.has(vocabularyPair(word)))
+  .sort((a,b)=>latestPdfHash(a)-latestPdfHash(b))
+  .map(word=>({...word,ex:"",exr:"",exm:"",read:"",readr:"",readm:"",level:"N3-source",kind:"kotoba"}));
+for(let offset=0;offset<missingLatestPdfVocabulary.length;offset+=25)sets.push(missingLatestPdfVocabulary.slice(offset,offset+25));
 const allWords = sets.flat();
 
 /*
@@ -1569,6 +1601,11 @@ improveVocabularyExamples(allWords);
 function prioritizeN3Vocabulary(words){
   const pdfPriorityRank=new Map(pdfPriorityVocabulary.map((word,index)=>[vocabularyPair(word),index]));
   const essential=[
+    "今日","明日","昨日","毎日","朝","昼","夜","今","時間","場所",
+    "行く","来る","帰る","出る","入る","会う","見る","聞く","話す","読む",
+    "書く","食べる","飲む","買う","使う","作る","待つ","持つ","分かる","知る",
+    "家","学校","店","駅","電車","病院","先生","家族","友達","電話",
+    "仕事","会社","休み","お金","食事","料理","天気","雨","道","近く",
     "必要","大切","予定","約束","連絡","相談","確認","準備","説明","注意",
     "利用","方法","理由","結果","経験","関係","状況","場合","意見","内容",
     "仕事","会社","会議","受付","予約","変更","中止","遅刻","間に合う","遅れる",
@@ -1599,7 +1636,7 @@ function prioritizeN3Vocabulary(words){
     if(examDaily.test(word.m||"")) score+=900;
     if(word.kind==="kotoba") score+=80;
     return {word,pdfRank:pdfPriorityRank.get(vocabularyPair(word))??Number.MAX_SAFE_INTEGER,level:levelRank(word),score,originalIndex};
-  }).sort((a,b)=>a.pdfRank-b.pdfRank||a.level-b.level||b.score-a.score||a.originalIndex-b.originalIndex).map(item=>item.word);
+  }).sort((a,b)=>b.score-a.score||a.level-b.level||a.pdfRank-b.pdfRank||a.originalIndex-b.originalIndex).map(item=>item.word);
 }
 
 const prioritizedWords=prioritizeN3Vocabulary(allWords);
@@ -1616,17 +1653,6 @@ const APP_DATA_VERSION_KEY="jlpt-app-data-version";
 const APP_DATA_VERSION="2026-09-18-pdf-priority-v2";
 const FOCUS_NOTICE_KEY="jlpt-focus-session-notice-confirmed";
 if(localStorage.getItem(APP_DATA_VERSION_KEY)!==APP_DATA_VERSION){
-  [
-    "n4n3-2589-progress",
-    "jlpt-study-calendar-v1",
-    "jlpt-last-active-at",
-    "n4n3-table-columns",
-    "jlpt-flashcard-random-mode",
-    "jlpt-focus-session-mode",
-    "jlpt-focus-session-notice-confirmed",
-    "jlpt-n3-quiz-wrong",
-    "jlpt-n3-grammar-understood"
-  ].forEach(key=>localStorage.removeItem(key));
   localStorage.setItem(APP_DATA_VERSION_KEY,APP_DATA_VERSION);
 }
 let activeDeckIndex = null; // null = keseluruhan
