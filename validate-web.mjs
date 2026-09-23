@@ -32,7 +32,12 @@ const currentKeys = new Set(sets.flat().map(word => `${norm(word.k)}|${norm(word
 const latestAddedWords = latestWords.filter(word => !currentKeys.has(`${norm(word.k)}|${norm(word.h)}`)).map(word => ({...word,level:"N3-source",kind:"kotoba"}));
 for (let offset = 0; offset < latestAddedWords.length; offset += 25) sets.push(latestAddedWords.slice(offset, offset + 25));
 const words = sets.flat();
+const englishSource = fs.readFileSync("english-meanings.js", "utf8");
+const englishSandbox = {};
+new Function("window", englishSource)(englishSandbox);
+const englishMeanings = englishSandbox.ENGLISH_MEANINGS || {};
 const keys = words.map(word => `${norm(word.k)}|${norm(word.h)}`);
+const missingEnglish = keys.filter(key => !englishMeanings[key]);
 const duplicates = keys.filter((key, index) => keys.indexOf(key) !== index);
 const missing = words.filter(word => !word.k || !word.h || !word.m);
 const oversized = sets.filter(group => group.length > 25);
@@ -52,7 +57,7 @@ for (const skeleton of skeletons) skeletonCounts.set(skeleton, (skeletonCounts.g
 const repeatedSkeletonEntries = [...skeletonCounts.entries()].filter(([, count]) => count > 1).sort((a,b)=>b[1]-a[1]);
 const repeatedSkeletons = repeatedSkeletonEntries.map(([,count])=>count);
 
-if (duplicates.length || missing.length || oversized.length || duplicateIds.length || duplicateExamples.length || bracketedExamples.length) {
-  throw new Error(JSON.stringify({ duplicates: duplicates.length, missing: missing.length, oversized: oversized.length, duplicateIds, duplicateExamples: duplicateExamples.length, bracketedExamples: bracketedExamples.length }, null, 2));
+if (duplicates.length || missing.length || missingEnglish.length || oversized.length || duplicateIds.length || duplicateExamples.length || bracketedExamples.length) {
+  throw new Error(JSON.stringify({ duplicates: duplicates.length, missing: missing.length, missingEnglish: missingEnglish.length, oversized: oversized.length, duplicateIds, duplicateExamples: duplicateExamples.length, bracketedExamples: bracketedExamples.length }, null, 2));
 }
-console.log(JSON.stringify({ scripts: scripts.length, words: words.length, groups: sets.length, maxGroup: Math.max(...sets.map(group => group.length)), levels: Object.fromEntries([...new Set(words.map(word => word.level))].map(level => [level, words.filter(word => word.level === level).length])), duplicatePairs: 0, missingFields: 0, duplicateIds: 0, duplicateExamples: 0, repeatedExampleSkeletons: repeatedSkeletons.length, largestSkeletonRepeat: repeatedSkeletons.length ? Math.max(...repeatedSkeletons) : 1, topRepeatedSkeletons: repeatedSkeletonEntries.slice(0,8) }, null, 2));
+console.log(JSON.stringify({ scripts: scripts.length, words: words.length, englishMeanings: Object.keys(englishMeanings).length, groups: sets.length, maxGroup: Math.max(...sets.map(group => group.length)), levels: Object.fromEntries([...new Set(words.map(word => word.level))].map(level => [level, words.filter(word => word.level === level).length])), duplicatePairs: 0, missingFields: 0, missingEnglish: 0, duplicateIds: 0, duplicateExamples: 0, repeatedExampleSkeletons: repeatedSkeletons.length, largestSkeletonRepeat: repeatedSkeletons.length ? Math.max(...repeatedSkeletons) : 1, topRepeatedSkeletons: repeatedSkeletonEntries.slice(0,8) }, null, 2));
