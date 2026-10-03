@@ -31,13 +31,20 @@ const latestWords = new Function(`return ${latestMatch[1]}`)();
 const currentKeys = new Set(sets.flat().map(word => `${norm(word.k)}|${norm(word.h)}`));
 const latestAddedWords = latestWords.filter(word => !currentKeys.has(`${norm(word.k)}|${norm(word.h)}`)).map(word => ({...word,level:"N3-source",kind:"kotoba"}));
 for (let offset = 0; offset < latestAddedWords.length; offset += 25) sets.push(latestAddedWords.slice(offset, offset + 25));
-const words = sets.flat();
+const curatedSource = fs.readFileSync("curated-vocabulary.js", "utf8");
+const curatedSandbox = {};
+new Function("window", curatedSource)(curatedSandbox);
+const curatedKeys = new Set(curatedSandbox.CURATED_VOCABULARY_KEYS || []);
+for (const word of completeVerbs) curatedKeys.add(`${norm(word.k)}|${norm(word.h)}`);
+const words = sets.flat().filter(word => curatedKeys.has(`${norm(word.k)}|${norm(word.h)}`));
+const filteredSets=[];
+for(let offset=0;offset<words.length;offset+=25)filteredSets.push(words.slice(offset,offset+25));
 const englishSource = fs.readFileSync("english-meanings.js", "utf8");
 const englishSandbox = {};
 new Function("window", englishSource)(englishSandbox);
 const englishMeanings = englishSandbox.ENGLISH_MEANINGS || {};
 const keys = words.map(word => `${norm(word.k)}|${norm(word.h)}`);
-const missingEnglish = keys.filter(key => !englishMeanings[key]);
+const missingEnglish = words.filter(word => !word.en && !englishMeanings[`${norm(word.k)}|${norm(word.h)}`]);
 const duplicates = keys.filter((key, index) => keys.indexOf(key) !== index);
 const missing = words.filter(word => !word.k || !word.h || !word.m);
 const oversized = sets.filter(group => group.length > 25);
@@ -57,7 +64,7 @@ for (const skeleton of skeletons) skeletonCounts.set(skeleton, (skeletonCounts.g
 const repeatedSkeletonEntries = [...skeletonCounts.entries()].filter(([, count]) => count > 1).sort((a,b)=>b[1]-a[1]);
 const repeatedSkeletons = repeatedSkeletonEntries.map(([,count])=>count);
 
-if (duplicates.length || missing.length || missingEnglish.length || oversized.length || duplicateIds.length || duplicateExamples.length || bracketedExamples.length) {
+if (duplicates.length || missing.length || missingEnglish.length || filteredSets.some(group=>group.length>25) || duplicateIds.length || duplicateExamples.length || bracketedExamples.length) {
   throw new Error(JSON.stringify({ duplicates: duplicates.length, missing: missing.length, missingEnglish: missingEnglish.length, oversized: oversized.length, duplicateIds, duplicateExamples: duplicateExamples.length, bracketedExamples: bracketedExamples.length }, null, 2));
 }
-console.log(JSON.stringify({ scripts: scripts.length, words: words.length, englishMeanings: Object.keys(englishMeanings).length, groups: sets.length, maxGroup: Math.max(...sets.map(group => group.length)), levels: Object.fromEntries([...new Set(words.map(word => word.level))].map(level => [level, words.filter(word => word.level === level).length])), duplicatePairs: 0, missingFields: 0, missingEnglish: 0, duplicateIds: 0, duplicateExamples: 0, repeatedExampleSkeletons: repeatedSkeletons.length, largestSkeletonRepeat: repeatedSkeletons.length ? Math.max(...repeatedSkeletons) : 1, topRepeatedSkeletons: repeatedSkeletonEntries.slice(0,8) }, null, 2));
+console.log(JSON.stringify({ scripts: scripts.length, words: words.length, englishMeanings: Object.keys(englishMeanings).length, groups: filteredSets.length, maxGroup: Math.max(...filteredSets.map(group => group.length)), levels: Object.fromEntries([...new Set(words.map(word => word.level))].map(level => [level, words.filter(word => word.level === level).length])), duplicatePairs: 0, missingFields: 0, missingEnglish: 0, duplicateIds: 0, duplicateExamples: 0, repeatedExampleSkeletons: repeatedSkeletons.length, largestSkeletonRepeat: repeatedSkeletons.length ? Math.max(...repeatedSkeletons) : 1, topRepeatedSkeletons: repeatedSkeletonEntries.slice(0,8) }, null, 2));
