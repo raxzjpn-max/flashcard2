@@ -1005,13 +1005,17 @@ body::before{background-image:linear-gradient(rgba(8,24,58,.08),rgba(8,24,58,.08
 .writing-canvas{touch-action:pan-y;cursor:grab;transition:transform .16s ease,opacity .16s ease}.writing-canvas.dragging{cursor:grabbing;user-select:none}.writing-canvas.switching{transform:scale(.96);opacity:.35}
 /* Kartu materi grammar: papan belajar modern, tetap selaras dengan tema aplikasi. */
 .grammar-card.grammar-lesson{display:block !important;width:100%;max-width:1100px;margin-inline:auto;padding:0 !important;overflow:hidden;border:2px solid #9fb6d5 !important;border-left:2px solid #9fb6d5 !important;border-radius:20px !important;background:#fff !important;box-shadow:0 12px 28px rgba(8,35,82,.13) !important;transform:none !important}
-.grammar-lesson-head{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:13px;padding:14px 16px;background:linear-gradient(105deg,#f6f9ff,#fff5f6);border-bottom:1px solid #cbd8e9}
+.grammar-lesson-details{display:block}.grammar-lesson-details>summary{list-style:none}.grammar-lesson-details>summary::-webkit-details-marker{display:none}
+.grammar-lesson-head{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:13px;padding:15px 16px;background:linear-gradient(105deg,#f6f9ff,#fff5f6);border-bottom:1px solid #cbd8e9;cursor:pointer;user-select:none;transition:background .18s ease}
+.grammar-lesson-details:not([open]) .grammar-lesson-head{border-bottom:0}.grammar-lesson-head:hover{background:linear-gradient(105deg,#edf4ff,#fff0f2)}.grammar-lesson-head:focus-visible{outline:3px solid rgba(36,87,214,.28);outline-offset:-3px}
 .grammar-lesson-head .grammar-number{background:#174fae;color:#fff;box-shadow:0 5px 12px rgba(23,79,174,.24)}
 .grammar-summary{min-width:0}.grammar-lesson-head .grammar-pattern{margin:0;color:#102f68 !important;font-family:"Noto Sans JP","Yu Gothic","Hiragino Kaku Gothic ProN",system-ui,sans-serif;font-size:clamp(19px,2.5vw,26px);font-weight:850;line-height:1.45;letter-spacing:.01em;line-break:strict;word-break:normal;text-wrap:balance}
+.grammar-collapsed-meaning{margin-top:4px;color:#b42335;font-size:clamp(14px,1.55vw,16px);font-weight:750;line-height:1.5;text-wrap:pretty}.grammar-expand-icon{display:grid;place-items:center;width:34px;height:34px;border:1px solid #c7d6ea;border-radius:10px;background:#fff;color:#2457d6;font-size:18px;font-weight:900;transition:transform .2s ease,background .2s ease}.grammar-lesson-details[open] .grammar-expand-icon{transform:rotate(180deg);background:#2457d6;color:#fff}
 .grammar-lesson-head .grammar-pattern-reading{display:inline-block;white-space:nowrap}
 .grammar-board{position:relative;display:grid;gap:14px;padding:20px 22px 22px;color:#fff;background:radial-gradient(circle at 88% 12%,rgba(42,119,203,.22),transparent 34%),linear-gradient(135deg,#073d52,#082f47 58%,#0d2843);border-top:5px solid #d44350;font-family:"Noto Sans JP","Yu Gothic","Hiragino Kaku Gothic ProN",system-ui,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
 .grammar-board::before{content:"";position:absolute;inset:7px;border:1px solid rgba(255,255,255,.08);border-radius:10px;pointer-events:none}
 .grammar-meaning-ribbon{position:relative;display:inline-flex;align-items:center;max-width:100%;width:max-content;margin:-20px 0 15px -22px;padding:10px 24px 10px 22px;border-radius:0 999px 999px 0;background:linear-gradient(135deg,#df3444,#bd2232);color:#fff78a;font-size:clamp(16px,2vw,20px);font-weight:900;line-height:1.45;letter-spacing:.01em;box-shadow:0 5px 12px rgba(0,0,0,.18);text-wrap:pretty}
+.grammar-board>.grammar-check{position:relative;z-index:1;justify-self:end;border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.1);color:#fff}.grammar-board>.grammar-check:hover{background:rgba(255,255,255,.18)}
 .grammar-use,.grammar-formation,.grammar-sample{position:relative;z-index:1}
 .grammar-use{display:flex;gap:11px;align-items:flex-start;margin:0;padding:14px 16px;border:1px solid rgba(121,236,255,.22);border-radius:12px;background:rgba(0,19,35,.22);color:#d4f9ff;font-size:clamp(15px,1.65vw,17px);font-weight:650;line-height:1.8;letter-spacing:.012em;text-wrap:pretty}
 .grammar-use:not(.no-limit){max-width:82ch}
@@ -1035,7 +1039,7 @@ body::before{background-image:linear-gradient(rgba(8,24,58,.08),rgba(8,24,58,.08
 .grammar-page-pagination,.grammarStudy-pagination{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;width:100%;max-width:1100px;margin:18px auto 4px;padding:13px;border:2px solid #c7d6ea;border-radius:18px;background:linear-gradient(110deg,#f5f8ff,#fff 50%,#f1fbf6);box-shadow:0 10px 28px rgba(16,47,104,.1)}
 .grammar-page-pagination button{width:100%;min-height:52px;font-weight:850}.grammar-page-pagination .previous-group{border-color:#c9d7e9;background:#fff;color:#173a72}.grammar-page-pagination button:disabled{cursor:not-allowed;opacity:.45;box-shadow:none;filter:grayscale(.3)}
 .flash-group-pagination.grammar-group-pagination{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}.flash-group-pagination.grammar-group-pagination button{width:100%;min-height:52px}.flash-group-pagination .previous-group{border-color:#c9d7e9;background:#fff;color:#173a72;font-weight:850}.flash-group-pagination button:disabled{cursor:not-allowed;opacity:.45;box-shadow:none;filter:grayscale(.3)}
-@media(max-width:640px){.grammar-lesson-head{grid-template-columns:36px minmax(0,1fr);gap:9px;padding:12px}.grammar-lesson-head .grammar-check{grid-column:1/-1;width:100%;justify-content:center}.grammar-board{gap:12px;padding:18px 13px 15px}.grammar-meaning-ribbon{margin:-18px 0 2px -13px;padding:9px 18px 9px 13px}.grammar-use,.grammar-simple{padding:12px 13px;font-size:15px;line-height:1.75}.grammar-formation{grid-template-columns:1fr}.grammar-formation b{padding:9px 12px 5px}.grammar-formation>span{padding:8px 12px 12px;font-size:15px;line-height:1.7}.grammar-sample{padding:13px}.grammar-sample-jp{font-size:18px;line-height:1.7}.grammar-sample-reading,.grammar-sample-id{font-size:14px;line-height:1.65}.grammar-pattern-reading{display:block;margin:4px 0 0;font-size:13px;line-height:1.5}.grammar-page-pagination,.flash-group-pagination.grammar-group-pagination{gap:8px;padding:9px}}
+@media(max-width:640px){.grammar-lesson-head{grid-template-columns:34px minmax(0,1fr) 32px;gap:9px;padding:12px}.grammar-expand-icon{width:31px;height:31px}.grammar-board{gap:12px;padding:18px 13px 15px}.grammar-board>.grammar-check{width:100%;justify-content:center}.grammar-meaning-ribbon{margin:-18px 0 2px -13px;padding:9px 18px 9px 13px}.grammar-use,.grammar-simple{padding:12px 13px;font-size:15px;line-height:1.75}.grammar-formation{grid-template-columns:1fr}.grammar-formation b{padding:9px 12px 5px}.grammar-formation>span{padding:8px 12px 12px;font-size:15px;line-height:1.7}.grammar-sample{padding:13px}.grammar-sample-jp{font-size:18px;line-height:1.7}.grammar-sample-reading,.grammar-sample-id{font-size:14px;line-height:1.65}.grammar-pattern-reading{display:block;margin:4px 0 0;font-size:13px;line-height:1.5}.grammar-page-pagination,.flash-group-pagination.grammar-group-pagination{gap:8px;padding:9px}}
 @media(max-width:430px){.grammar-page-pagination,.flash-group-pagination.grammar-group-pagination{grid-template-columns:1fr}.grammar-page-pagination button,.flash-group-pagination.grammar-group-pagination button{min-height:48px}.grammar-lesson-head .grammar-pattern{font-size:18px}.grammar-use{font-size:14.5px}.grammar-sample-jp{font-size:17px}.grammar-sample-reading,.grammar-sample-id{font-size:13.5px}}
 </style>
 <script defer src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.7.3/dist/hanzi-writer.min.js"></script>
@@ -1071,7 +1075,7 @@ body::before{background-image:linear-gradient(rgba(8,24,58,.08),rgba(8,24,58,.08
   <details class="feature-guide">
     <summary>📝 Log Update Website</summary>
     <div class="feature-guide-content">
-      <div class="feature-guide-item"><strong>4 Okt 2026</strong><span>Memperbarui 192 pola Grammar menjadi kartu materi visual. Seluruh pola kini memiliki fungsi, rumus, contoh Jepang, hiragana, arti, penanda warna, penjelasan “Cara gampang memahaminya”, susunan teks yang lebih rapi, penanda paham, serta tombol navigasi.</span></div>
+      <div class="feature-guide-item"><strong>4 Okt 2026</strong><span>Memperbarui 192 pola Grammar menjadi kartu accordion. Tampilan awal hanya berisi pola dan arti; penjelasan lengkap, rumus, contoh, hiragana, penanda warna, cara gampang memahami, dan checkbox paham muncul setelah kartu ditekan.</span></div>
       <div class="feature-guide-item"><strong>18 Sep 2026</strong><span>Mengutamakan 560 kosakata dari dua materi PDF ke bagian awal. Sebanyak 242 kosakata yang belum tersedia ditambahkan tanpa menggandakan kosakata lama.</span></div>
       <div class="feature-guide-item"><strong>2 Okt 2026</strong><span>Menyaring kosakata yang jarang digunakan. Daftar belajar kini berfokus pada kosakata umum sehari-hari dan kosakata inti yang relevan untuk ujian JLPT N3.</span></div>
       <div class="feature-guide-item"><strong>20 Sep 2026</strong><span>Menambahkan kosakata unik dari materi PDF terbaru secara acak. Pembaruan website sekarang tidak lagi menghapus progres belajar yang sudah tersimpan di perangkat.</span></div>
@@ -3037,6 +3041,7 @@ let grammarCombinedMode=false;
 let grammarFromFirstMode=false;
 let grammarOnlyUnlearned=false;
 let grammarSourceDeck=[];
+const grammarExpandedPatterns=new Set();
 
 function groupedGrammar(){
   const data=prioritizedN3Grammar();
@@ -3348,19 +3353,29 @@ function renderGrammarCombined(){
     const patternReading=grammarPatternReadings[g.p];
     const lesson=grammarLessonFor(g);
     c.className=`grammar-card grammar-lesson${checked?" understood":" unlearned"}`;
-    c.innerHTML=`<div class="grammar-lesson-head">
+    const expanded=grammarExpandedPatterns.has(g.p);
+    c.innerHTML=`<details class="grammar-lesson-details" data-grammar-details="${idx}" ${expanded?"open":""}>
+      <summary class="grammar-lesson-head">
         <div class="grammar-number">${idx+1}</div>
-        <div class="grammar-summary"><div class="grammar-pattern">${g.p}${patternReading?`<span class="grammar-pattern-reading">（${patternReading}）</span>`:""}</div></div>
-        <label class="grammar-check"><input type="checkbox" data-grammar-key="${g.p}" ${checked?"checked":""}> <span>${checked?"Sudah paham":"Tandai paham"}</span></label>
-      </div>
+        <div class="grammar-summary"><div class="grammar-pattern">${g.p}${patternReading?`<span class="grammar-pattern-reading">（${patternReading}）</span>`:""}</div><div class="grammar-collapsed-meaning">${escapeGrammarHtml(g.m)}</div></div>
+        <span class="grammar-expand-icon" aria-hidden="true">⌄</span>
+      </summary>
       <div class="grammar-board">
         <div class="grammar-meaning-ribbon">${g.m}</div>
+        <label class="grammar-check"><input type="checkbox" data-grammar-key="${g.p}" ${checked?"checked":""}> <span>${checked?"Sudah paham":"Tandai paham"}</span></label>
         <div class="grammar-use"><span class="grammar-use-text">${emphasizeGrammarUse(lesson.use)}</span></div>
         <div class="grammar-simple"><span class="grammar-simple-text"><strong>Cara gampang memahaminya</strong>${emphasizeGrammarUse(grammarSimpleExplanation(g))}</span></div>
         <div class="grammar-formation"><b>Rumus pola</b><span>${emphasizeGrammarFormula(lesson.form)}</span></div>
         ${lesson.jp?`<div class="grammar-sample"><div class="grammar-sample-label">Contoh kalimat</div><div class="grammar-sample-jp">• ${emphasizeGrammarExample(lesson.jp,g.p)}</div><div class="grammar-sample-reading">${escapeGrammarHtml(lesson.reading)}</div><div class="grammar-sample-id">${escapeGrammarHtml(lesson.id)}</div></div>`:""}
-      </div>`;
+      </div></details>`;
     list.appendChild(c);
+  });
+  list.querySelectorAll("[data-grammar-details]").forEach(details=>{
+    details.addEventListener("toggle",()=>{
+      const item=filtered[Number(details.dataset.grammarDetails)];
+      if(!item)return;
+      if(details.open)grammarExpandedPatterns.add(item.p);else grammarExpandedPatterns.delete(item.p);
+    });
   });
   list.querySelectorAll("[data-grammar-key]").forEach(control=>{
     control.addEventListener("change",()=>{
