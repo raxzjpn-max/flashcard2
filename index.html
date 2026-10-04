@@ -1015,7 +1015,8 @@ body::before{background-image:linear-gradient(rgba(8,24,58,.08),rgba(8,24,58,.08
 .grammar-board{position:relative;display:grid;gap:14px;padding:20px 22px 22px;color:#fff;background:radial-gradient(circle at 88% 12%,rgba(42,119,203,.22),transparent 34%),linear-gradient(135deg,#073d52,#082f47 58%,#0d2843);border-top:5px solid #d44350;font-family:"Noto Sans JP","Yu Gothic","Hiragino Kaku Gothic ProN",system-ui,sans-serif;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
 .grammar-board::before{content:"";position:absolute;inset:7px;border:1px solid rgba(255,255,255,.08);border-radius:10px;pointer-events:none}
 .grammar-meaning-ribbon{position:relative;display:inline-flex;align-items:center;max-width:100%;width:max-content;margin:-20px 0 15px -22px;padding:10px 24px 10px 22px;border-radius:0 999px 999px 0;background:linear-gradient(135deg,#df3444,#bd2232);color:#fff78a;font-size:clamp(16px,2vw,20px);font-weight:900;line-height:1.45;letter-spacing:.01em;box-shadow:0 5px 12px rgba(0,0,0,.18);text-wrap:pretty}
-.grammar-board>.grammar-check{position:relative;z-index:1;justify-self:end;border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.1);color:#fff}.grammar-board>.grammar-check:hover{background:rgba(255,255,255,.18)}
+.grammar-board-tools .grammar-check{position:relative;z-index:1;width:100%;justify-content:center;border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.1);color:#fff}.grammar-board-tools .grammar-check:hover{background:rgba(255,255,255,.18)}
+.grammar-board-tools{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}.grammar-note-open{min-height:46px;border-color:rgba(132,202,255,.45) !important;background:linear-gradient(135deg,rgba(36,87,214,.9),rgba(18,61,135,.92)) !important;color:#fff !important;font-weight:850;box-shadow:0 7px 16px rgba(0,0,0,.16)}
 .grammar-use,.grammar-formation,.grammar-sample{position:relative;z-index:1}
 .grammar-use{display:flex;gap:11px;align-items:flex-start;margin:0;padding:14px 16px;border:1px solid rgba(121,236,255,.22);border-radius:12px;background:rgba(0,19,35,.22);color:#d4f9ff;font-size:clamp(15px,1.65vw,17px);font-weight:650;line-height:1.8;letter-spacing:.012em;text-wrap:pretty}
 .grammar-use:not(.no-limit){max-width:82ch}
@@ -1041,6 +1042,8 @@ body::before{background-image:linear-gradient(rgba(8,24,58,.08),rgba(8,24,58,.08
 .flash-group-pagination.grammar-group-pagination{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}.flash-group-pagination.grammar-group-pagination button{width:100%;min-height:52px}.flash-group-pagination .previous-group{border-color:#c9d7e9;background:#fff;color:#173a72;font-weight:850}.flash-group-pagination button:disabled{cursor:not-allowed;opacity:.45;box-shadow:none;filter:grayscale(.3)}
 @media(max-width:640px){.grammar-lesson-head{grid-template-columns:34px minmax(0,1fr) 32px;gap:9px;padding:12px}.grammar-expand-icon{width:31px;height:31px}.grammar-board{gap:12px;padding:18px 13px 15px}.grammar-board>.grammar-check{width:100%;justify-content:center}.grammar-meaning-ribbon{margin:-18px 0 2px -13px;padding:9px 18px 9px 13px}.grammar-use,.grammar-simple{padding:12px 13px;font-size:15px;line-height:1.75}.grammar-formation{grid-template-columns:1fr}.grammar-formation b{padding:9px 12px 5px}.grammar-formation>span{padding:8px 12px 12px;font-size:15px;line-height:1.7}.grammar-sample{padding:13px}.grammar-sample-jp{font-size:18px;line-height:1.7}.grammar-sample-reading,.grammar-sample-id{font-size:14px;line-height:1.65}.grammar-pattern-reading{display:block;margin:4px 0 0;font-size:13px;line-height:1.5}.grammar-page-pagination,.flash-group-pagination.grammar-group-pagination{gap:8px;padding:9px}}
 @media(max-width:430px){.grammar-page-pagination,.flash-group-pagination.grammar-group-pagination{grid-template-columns:1fr}.grammar-page-pagination button,.flash-group-pagination.grammar-group-pagination button{min-height:48px}.grammar-lesson-head .grammar-pattern{font-size:18px}.grammar-use{font-size:14.5px}.grammar-sample-jp{font-size:17px}.grammar-sample-reading,.grammar-sample-id{font-size:13.5px}}
+.grammar-note-modal{position:fixed;z-index:1250;inset:0;display:grid;place-items:center;padding:16px;background:rgba(4,16,38,.68);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);animation:previewFade .18s ease}.grammar-note-card{position:relative;width:min(96vw,860px);max-height:94vh;overflow:auto;padding:25px;border:2px solid rgba(255,255,255,.88);border-radius:25px;background:linear-gradient(145deg,#fff,#edf4ff 58%,#fff1f3);box-shadow:0 30px 90px rgba(2,12,32,.45);animation:previewRise .2s ease}.grammar-note-card h2{margin:4px 44px 4px 0;color:#102f68;font-size:clamp(23px,4vw,32px)}.grammar-note-pattern{margin-bottom:17px;color:#b42335;font-size:clamp(17px,2.5vw,22px);font-weight:850}.grammar-note-section{margin-top:14px}.grammar-note-section label,.grammar-note-section-title{display:block;margin-bottom:8px;color:#173a72;font-size:13px;font-weight:900;letter-spacing:.055em;text-transform:uppercase}.grammar-note-text{display:block;width:100%;min-height:130px;resize:vertical;padding:14px 15px;border:2px solid #c7d6ea;border-radius:15px;background:#fff;color:#172b4d;font:600 16px/1.7 system-ui,sans-serif;outline:none}.grammar-note-text:focus{border-color:#2457d6;box-shadow:0 0 0 4px rgba(36,87,214,.11)}.grammar-note-toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:9px}.note-color{width:34px;height:34px;padding:0;border:3px solid #fff;border-radius:50%;background:var(--note-color);box-shadow:0 0 0 1px #b9c8dc}.note-color.is-active{box-shadow:0 0 0 3px #2457d6}.grammar-note-size{min-height:38px;padding:6px 10px;border:1px solid #c7d6ea;border-radius:9px;background:#fff;color:#173a72;font-weight:750}.grammar-note-toolbar .note-tool{min-height:38px;padding:7px 11px;font-size:12px}.grammar-note-canvas-wrap{position:relative;width:100%;height:300px;overflow:hidden;border:2px solid #b9cbea;border-radius:16px;background-color:#fff;background-image:linear-gradient(rgba(36,87,214,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(36,87,214,.08) 1px,transparent 1px);background-size:28px 28px;box-shadow:inset 0 1px 5px rgba(16,47,104,.08)}.grammar-note-canvas{display:block;width:100%;height:100%;touch-action:none;cursor:crosshair}.grammar-note-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:17px}.grammar-note-actions button{min-height:48px}.grammar-note-status{min-height:20px;margin-top:9px;color:#56708f;font-size:13px;font-weight:750;text-align:center}
+@media(max-width:640px){.grammar-board-tools{grid-template-columns:1fr}.grammar-note-modal{padding:8px}.grammar-note-card{padding:21px 13px 15px;border-radius:20px}.grammar-note-canvas-wrap{height:260px}.grammar-note-toolbar{gap:6px}.grammar-note-actions{grid-template-columns:1fr}}
 </style>
 <script defer src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.7.3/dist/hanzi-writer.min.js"></script>
 </head>
@@ -1075,7 +1078,7 @@ body::before{background-image:linear-gradient(rgba(8,24,58,.08),rgba(8,24,58,.08
   <details class="feature-guide">
     <summary>📝 Log Update Website</summary>
     <div class="feature-guide-content">
-      <div class="feature-guide-item"><strong>4 Okt 2026</strong><span>Memperbarui 192 pola Grammar menjadi kartu accordion. Tampilan awal hanya berisi pola dan arti; penjelasan lengkap, rumus, contoh, hiragana, penanda warna, cara gampang memahami, dan checkbox paham muncul setelah kartu ditekan.</span></div>
+      <div class="feature-guide-item"><strong>4 Okt 2026</strong><span>Memperbarui 192 pola Grammar menjadi kartu accordion dan menambahkan catatan per pola. Catatan dapat diketik atau ditulis dengan pen, stylus, sentuhan, dan mouse; tersedia warna, ketebalan, Undo, hapus tulisan, serta penyimpanan otomatis di perangkat.</span></div>
       <div class="feature-guide-item"><strong>18 Sep 2026</strong><span>Mengutamakan 560 kosakata dari dua materi PDF ke bagian awal. Sebanyak 242 kosakata yang belum tersedia ditambahkan tanpa menggandakan kosakata lama.</span></div>
       <div class="feature-guide-item"><strong>2 Okt 2026</strong><span>Menyaring kosakata yang jarang digunakan. Daftar belajar kini berfokus pada kosakata umum sehari-hari dan kosakata inti yang relevan untuk ujian JLPT N3.</span></div>
       <div class="feature-guide-item"><strong>20 Sep 2026</strong><span>Menambahkan kosakata unik dari materi PDF terbaru secara acak. Pembaruan website sekarang tidak lagi menghapus progres belajar yang sudah tersimpan di perangkat.</span></div>
@@ -1331,6 +1334,37 @@ body::before{background-image:linear-gradient(rgba(8,24,58,.08),rgba(8,24,58,.08
       <button id="writingNext">Kanji berikutnya →</button>
     </div>
     <small>Animasi mengulang otomatis. Geser kiri atau kanan untuk berpindah Kanji.</small>
+  </div>
+</div>
+
+<div class="grammar-note-modal hidden" id="grammarNoteModal" role="dialog" aria-modal="true" aria-labelledby="grammarNoteTitle">
+  <div class="grammar-note-card">
+    <button class="vocab-preview-close" id="grammarNoteClose" aria-label="Tutup catatan">×</button>
+    <span class="vocab-preview-label">CATATAN GRAMMAR</span>
+    <h2 id="grammarNoteTitle">Catatan Belajar</h2>
+    <div class="grammar-note-pattern" id="grammarNotePattern"></div>
+    <div class="grammar-note-section">
+      <label for="grammarNoteText">⌨ Catatan dengan keyboard</label>
+      <textarea class="grammar-note-text" id="grammarNoteText" placeholder="Tulis ringkasan, kata kunci, atau cara mudah mengingat pola ini..."></textarea>
+    </div>
+    <div class="grammar-note-section">
+      <div class="grammar-note-section-title">✍ Tulis dengan pen, sentuhan, atau mouse</div>
+      <div class="grammar-note-toolbar" aria-label="Alat tulis catatan">
+        <button class="note-color is-active" type="button" data-note-color="#153875" style="--note-color:#153875" aria-label="Pena biru"></button>
+        <button class="note-color" type="button" data-note-color="#d62f42" style="--note-color:#d62f42" aria-label="Pena merah"></button>
+        <button class="note-color" type="button" data-note-color="#16845c" style="--note-color:#16845c" aria-label="Pena hijau"></button>
+        <button class="note-color" type="button" data-note-color="#111827" style="--note-color:#111827" aria-label="Pena hitam"></button>
+        <select class="grammar-note-size" id="grammarNoteSize" aria-label="Ketebalan pena"><option value="2.5">Tipis</option><option value="4" selected>Sedang</option><option value="7">Tebal</option></select>
+        <button class="note-tool" type="button" id="grammarNoteUndo">↶ Undo</button>
+        <button class="note-tool" type="button" id="grammarNoteClear">⌫ Hapus tulisan</button>
+      </div>
+      <div class="grammar-note-canvas-wrap"><canvas class="grammar-note-canvas" id="grammarNoteCanvas"></canvas></div>
+    </div>
+    <div class="grammar-note-actions">
+      <button id="grammarNoteCancel">Tutup</button>
+      <button class="primary" id="grammarNoteSave">💾 Simpan catatan</button>
+    </div>
+    <div class="grammar-note-status" id="grammarNoteStatus" aria-live="polite">Catatan tersimpan otomatis di perangkat ini.</div>
   </div>
 </div>
 
@@ -3362,7 +3396,10 @@ function renderGrammarCombined(){
       </summary>
       <div class="grammar-board">
         <div class="grammar-meaning-ribbon">${g.m}</div>
-        <label class="grammar-check"><input type="checkbox" data-grammar-key="${g.p}" ${checked?"checked":""}> <span>${checked?"Sudah paham":"Tandai paham"}</span></label>
+        <div class="grammar-board-tools">
+          <label class="grammar-check"><input type="checkbox" data-grammar-key="${g.p}" ${checked?"checked":""}> <span>${checked?"Sudah paham":"Tandai paham"}</span></label>
+          <button class="grammar-note-open" type="button" data-grammar-note="${idx}">📝 Buka catatan</button>
+        </div>
         <div class="grammar-use"><span class="grammar-use-text">${emphasizeGrammarUse(lesson.use)}</span></div>
         <div class="grammar-simple"><span class="grammar-simple-text"><strong>Cara gampang memahaminya</strong>${emphasizeGrammarUse(grammarSimpleExplanation(g))}</span></div>
         <div class="grammar-formation"><b>Rumus pola</b><span>${emphasizeGrammarFormula(lesson.form)}</span></div>
@@ -3375,6 +3412,12 @@ function renderGrammarCombined(){
       const item=filtered[Number(details.dataset.grammarDetails)];
       if(!item)return;
       if(details.open)grammarExpandedPatterns.add(item.p);else grammarExpandedPatterns.delete(item.p);
+    });
+  });
+  list.querySelectorAll("[data-grammar-note]").forEach(button=>{
+    button.addEventListener("click",()=>{
+      const item=filtered[Number(button.dataset.grammarNote)];
+      if(item)openGrammarNote(item);
     });
   });
   list.querySelectorAll("[data-grammar-key]").forEach(control=>{
@@ -3392,6 +3435,137 @@ function renderGrammarCombined(){
     : `${understoodCount}/${data.length} sudah paham${q?` • ${filtered.length} hasil`:""}`;
   updateGrammarControls();
 }
+
+const GRAMMAR_NOTES_KEY="jlpt-n3-grammar-notes-v1";
+let grammarNotes={};
+try{grammarNotes=JSON.parse(localStorage.getItem(GRAMMAR_NOTES_KEY)||"{}")||{}}catch(_){grammarNotes={}}
+let activeGrammarNotePattern="";
+let grammarNoteStrokes=[];
+let grammarNoteActiveStroke=null;
+let grammarNoteColor="#153875";
+let grammarNoteDrawing=false;
+let grammarNoteSaveTimer=0;
+let grammarNoteRedrawFrame=0;
+
+function grammarNoteContext(){
+  const canvas=$("grammarNoteCanvas");
+  const ratio=Math.max(1,Math.min(3,window.devicePixelRatio||1));
+  const rect=canvas.getBoundingClientRect();
+  const width=Math.max(1,Math.round(rect.width));
+  const height=Math.max(1,Math.round(rect.height));
+  if(canvas.width!==Math.round(width*ratio)||canvas.height!==Math.round(height*ratio)){
+    canvas.width=Math.round(width*ratio);canvas.height=Math.round(height*ratio);
+  }
+  const context=canvas.getContext("2d");
+  context.setTransform(ratio,0,0,ratio,0,0);
+  context.lineCap="round";context.lineJoin="round";
+  return {canvas,context,width,height};
+}
+
+function drawGrammarNoteStroke(context,stroke,width,height){
+  const points=stroke?.points||[];
+  if(!points.length)return;
+  context.strokeStyle=stroke.color||"#153875";
+  context.fillStyle=stroke.color||"#153875";
+  context.lineWidth=Number(stroke.width)||4;
+  if(points.length===1){
+    context.beginPath();context.arc(points[0].x*width,points[0].y*height,context.lineWidth/2,0,Math.PI*2);context.fill();return;
+  }
+  context.beginPath();
+  context.moveTo(points[0].x*width,points[0].y*height);
+  for(let index=1;index<points.length-1;index++){
+    const current=points[index],next=points[index+1];
+    const middleX=(current.x+next.x)*width/2,middleY=(current.y+next.y)*height/2;
+    context.quadraticCurveTo(current.x*width,current.y*height,middleX,middleY);
+  }
+  const last=points.at(-1);context.lineTo(last.x*width,last.y*height);context.stroke();
+}
+
+function redrawGrammarNote(){
+  grammarNoteRedrawFrame=0;
+  const {context,width,height}=grammarNoteContext();
+  context.clearRect(0,0,width,height);
+  grammarNoteStrokes.forEach(stroke=>drawGrammarNoteStroke(context,stroke,width,height));
+}
+function scheduleGrammarNoteRedraw(){
+  if(!grammarNoteRedrawFrame)grammarNoteRedrawFrame=requestAnimationFrame(redrawGrammarNote);
+}
+
+function saveGrammarNote(showStatus=false){
+  if(!activeGrammarNotePattern)return;
+  grammarNotes[activeGrammarNotePattern]={text:$("grammarNoteText").value,strokes:grammarNoteStrokes};
+  try{localStorage.setItem(GRAMMAR_NOTES_KEY,JSON.stringify(grammarNotes))}catch(_){
+    $("grammarNoteStatus").textContent="Penyimpanan perangkat penuh. Hapus sebagian tulisan lalu coba lagi.";return;
+  }
+  if(showStatus){
+    $("grammarNoteStatus").textContent="✓ Catatan tersimpan di perangkat ini.";
+    clearTimeout(grammarNoteSaveTimer);grammarNoteSaveTimer=setTimeout(()=>{$("grammarNoteStatus").textContent="Catatan tersimpan otomatis di perangkat ini."},1800);
+  }
+}
+
+function openGrammarNote(grammar){
+  activeGrammarNotePattern=grammar.p;
+  const saved=grammarNotes[grammar.p]||{};
+  grammarNoteStrokes=Array.isArray(saved.strokes)?JSON.parse(JSON.stringify(saved.strokes)):[];
+  $("grammarNotePattern").textContent=`${grammar.p} — ${grammar.m}`;
+  $("grammarNoteText").value=saved.text||"";
+  $("grammarNoteStatus").textContent="Catatan tersimpan otomatis di perangkat ini.";
+  $("grammarNoteModal").classList.remove("hidden");
+  document.body.style.overflow="hidden";
+  requestAnimationFrame(()=>{redrawGrammarNote();$("grammarNoteText").focus({preventScroll:true})});
+}
+
+function closeGrammarNote(){
+  if($("grammarNoteModal").classList.contains("hidden"))return;
+  saveGrammarNote();
+  $("grammarNoteModal").classList.add("hidden");
+  document.body.style.overflow="";
+  activeGrammarNotePattern="";grammarNoteDrawing=false;grammarNoteActiveStroke=null;
+}
+
+function grammarNotePoint(event){
+  const rect=$("grammarNoteCanvas").getBoundingClientRect();
+  return {x:Math.max(0,Math.min(1,(event.clientX-rect.left)/rect.width)),y:Math.max(0,Math.min(1,(event.clientY-rect.top)/rect.height))};
+}
+
+const grammarNoteCanvas=$("grammarNoteCanvas");
+grammarNoteCanvas.addEventListener("pointerdown",event=>{
+  event.preventDefault();grammarNoteDrawing=true;
+  grammarNoteActiveStroke={color:grammarNoteColor,width:Number($("grammarNoteSize").value)||4,points:[grammarNotePoint(event)]};
+  grammarNoteStrokes.push(grammarNoteActiveStroke);
+  grammarNoteCanvas.setPointerCapture?.(event.pointerId);scheduleGrammarNoteRedraw();
+});
+grammarNoteCanvas.addEventListener("pointermove",event=>{
+  if(!grammarNoteDrawing||!grammarNoteActiveStroke)return;
+  event.preventDefault();const point=grammarNotePoint(event),last=grammarNoteActiveStroke.points.at(-1);
+  if(!last||Math.hypot(point.x-last.x,point.y-last.y)>.0015){grammarNoteActiveStroke.points.push(point);scheduleGrammarNoteRedraw()}
+});
+function finishGrammarNoteStroke(event){
+  if(!grammarNoteDrawing)return;grammarNoteDrawing=false;grammarNoteActiveStroke=null;
+  grammarNoteCanvas.releasePointerCapture?.(event.pointerId);saveGrammarNote();scheduleGrammarNoteRedraw();
+}
+grammarNoteCanvas.addEventListener("pointerup",finishGrammarNoteStroke);
+grammarNoteCanvas.addEventListener("pointercancel",finishGrammarNoteStroke);
+document.querySelectorAll("[data-note-color]").forEach(button=>button.addEventListener("click",()=>{
+  grammarNoteColor=button.dataset.noteColor;
+  document.querySelectorAll("[data-note-color]").forEach(item=>item.classList.toggle("is-active",item===button));
+}));
+$("grammarNoteUndo").onclick=()=>{grammarNoteStrokes.pop();redrawGrammarNote();saveGrammarNote(true)};
+$("grammarNoteClear").onclick=()=>{
+  if(!grammarNoteStrokes.length)return;
+  grammarNoteStrokes=[];redrawGrammarNote();saveGrammarNote(true);
+};
+$("grammarNoteText").addEventListener("input",()=>{
+  clearTimeout(grammarNoteSaveTimer);grammarNoteSaveTimer=setTimeout(()=>saveGrammarNote(),350);
+});
+$("grammarNoteSave").onclick=()=>saveGrammarNote(true);
+$("grammarNoteClose").onclick=closeGrammarNote;
+$("grammarNoteCancel").onclick=closeGrammarNote;
+$("grammarNoteModal").addEventListener("click",event=>{if(event.target===$("grammarNoteModal"))closeGrammarNote()});
+window.addEventListener("resize",()=>{if(!$("grammarNoteModal").classList.contains("hidden"))scheduleGrammarNoteRedraw()});
+document.addEventListener("keydown",event=>{
+  if(event.key==="Escape"&&!$("grammarNoteModal").classList.contains("hidden")){event.preventDefault();closeGrammarNote()}
+});
 
 let grammarDeck=[];
 let grammarIndex=0;
